@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/aay/groc/BuildConfig.java
+ com.aay.groc.BuildConfig
+groceryhome/bytetobit/com/grocery_home/MainActivity.java
+ com.aay.groc.MainActivity
