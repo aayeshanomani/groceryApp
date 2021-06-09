@@ -1,6 +1,10 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:grocery_home/main.dart';
 import 'package:grocery_home/utils/colors_utils.dart';
 import 'package:grocery_home/utils/string_utils.dart';
+import 'package:grocery_home/views/home/login.dart';
+import 'package:grocery_home/views/home/services/helper.dart';
 import 'package:grocery_home/views/home/widgets/home_appbar.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:grocery_home/views/home/widgets/home_shopbycategory.dart';
@@ -14,21 +18,36 @@ class Home extends StatefulWidget {
   }
 }
 
-class HomeState extends State<StatefulWidget>{
-
+class HomeState extends State<StatefulWidget> {
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
   }
 
+  final auth = FirebaseAuth.instance;
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-        backgroundColor: ColorsUtils.HomeBgColor,
-        appBar: HomeAppBar(),
-        body: showBody());
+      backgroundColor: ColorsUtils.HomeBgColor,
+      appBar: AppBar(
+        title: Text("Home"),
+      ),
+      body: showBody(),
+      drawer: Drawer(
+        child: TextButton(
+          child: Text(isLoggedIn ? "Sign Out" : "Sign In"),
+          onPressed: () async {
+            isLoggedIn = false;
+            await Helper.saveUserloggedIn(false);
+            Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => Login()));
+          },
+        ),
+      ),
+    );
   }
 
   Widget image_carousel = new Container(
@@ -93,8 +112,7 @@ class HomeState extends State<StatefulWidget>{
                           fontSize: 18.0,
                           fontFamily: StringUtils.Montserrat,
                           fontWeight: FontWeight.w400),
-                    )
-                )
+                    ))
               ],
             ),
           ),
@@ -104,6 +122,5 @@ class HomeState extends State<StatefulWidget>{
     );
   }
 
-  Widget _showAllBtnTapped() {
-  }
+  Widget _showAllBtnTapped() {}
 }

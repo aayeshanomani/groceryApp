@@ -9,16 +9,9 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
     // TODO: implement build
     return AppBar(
       backgroundColor: Colors.white,
-      leading: IconButton(
-        icon: Icon(Icons.arrow_back, color: Colors.white), onPressed: () {  },
-      ),
+     
       title: Text(
-        StringUtils.Home,
-        style: TextStyle(
-            color: ColorsUtils.Black,
-            fontSize: 20.0,
-            fontFamily: StringUtils.Montserrat,
-            fontWeight: FontWeight.w700),
+        "Home"
       ),
     );
   }

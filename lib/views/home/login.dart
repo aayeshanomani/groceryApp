@@ -1,7 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:grocery_home/views/home/services/authService.dart';
+import 'package:grocery_home/views/home/home.dart';
+import 'package:grocery_home/views/home/services/database.dart';
+import 'package:grocery_home/views/home/services/helper.dart';
+import 'package:grocery_home/views/home/signup.dart';
+import 'package:modal_progress_hud/modal_progress_hud.dart';
 
 class Login extends StatefulWidget {
   const Login({Key key}) : super(key: key);
@@ -11,81 +14,130 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  final formKey = new GlobalKey<FormState>();
+  String _email, _password, _username;
+  final auth = FirebaseAuth.instance;
 
-  String phno, verificationId;
+  bool login = false;
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Form(
-        key: formKey,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(left: 25, right: 25),
-              child: TextFormField(
-                keyboardType: TextInputType.phone,
-                decoration: InputDecoration(hintText: "Enter Phone Number"),
-                onChanged: (val) {
-                  setState(() {
-                    if (val.contains("+91"))
-                      this.phno = val;
-                    else
-                      this.phno = "+91" + val;
-                  });
-                },
+    Future<void> _showMyDialog(String title, String message) async {
+      return showDialog<void>(
+        context: context,
+        barrierDismissible: false, // user must tap button!
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text(title),
+            content: SingleChildScrollView(
+              child: ListBody(
+                children: <Widget>[
+                  Text(message),
+                ],
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(left: 25, right: 25, top: 27),
-              child: ElevatedButton(
-                style: ButtonStyle(
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color: Color(0xffF5F3BB)))),
-                ),
-                child: Center(
-                  child: Text("Login"),
-                ),
+            actions: <Widget>[
+              TextButton(
+                child: const Text('OK'),
                 onPressed: () {
-                  verifyPhone(phno);
+                  Navigator.of(context).pop();
                 },
               ),
-            )
-          ],
+            ],
+          );
+        },
+      );
+    }
+
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Color(0xff0A8754),
+        title: Center(child: Text("Login")),
+      ),
+      body: ModalProgressHUD(
+        inAsyncCall: login,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Image.asset(
+                "assets/icon.jpeg",
+                fit: BoxFit.cover,
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: TextField(
+                        keyboardType: TextInputType.text,
+                        decoration: InputDecoration(
+                          hintText: "Username",
+                        ),
+                        onChanged: (val) {
+                          setState(() {
+                            _username = val.trim();
+                          });
+                        },
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: TextField(
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          hintText: "Password",
+                        ),
+                        onChanged: (val) {
+                          setState(() {
+                            _password = val.trim();
+                          });
+                        },
+                      ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        ElevatedButton(
+                            onPressed: () async {
+                              login = !login;
+                              if (await Database()
+                                  .checkPassword(_username, _password)) {
+                                _showMyDialog(
+                                    "Error", "No such User Credentials");
+                              } else {
+                                isLoggedIn = true;
+                                await Helper.saveUserloggedIn(true);
+                                Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Home()));
+                              }
+                            },
+                            child: Text("Sign in"),
+                            style: ElevatedButton.styleFrom(
+                                primary: Color(0xffDFA06E))),
+                        TextButton(
+                          onPressed: () async {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => SignUp()));
+                          },
+                          child: Text("New User? Sign up"),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
-  }
-
-  Future<void> verifyPhone(phno) async {
-    final PhoneVerificationCompleted verified = (AuthCredential authResult) {
-      AuthService().signIn(authResult);
-    };
-
-    final PhoneVerificationFailed verificationFailed =
-        (FirebaseAuthException authException) {
-      print('${authException.message}');
-    };
-
-    final PhoneCodeSent codeSent = (String verId, [int forceResend]) {
-      this.verificationId = verId;
-    };
-
-    final PhoneCodeAutoRetrievalTimeout codeAutoRetrievalTimeout =
-        (String verId) {
-      this.verificationId = verId;
-    };
-
-    await FirebaseAuth.instance.verifyPhoneNumber(
-        phoneNumber: phno,
-        timeout: const Duration(seconds: 8),
-        verificationCompleted: verified,
-        verificationFailed: verificationFailed,
-        codeSent: codeSent,
-        codeAutoRetrievalTimeout: codeAutoRetrievalTimeout);
   }
 }
