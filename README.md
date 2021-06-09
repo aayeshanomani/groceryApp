@@ -5,11 +5,12 @@
 * Compatible for Android/iOS
 * Managed by custom created utils for Widget, String etc.
 
-## Full Source Code UI :
-[https://codecanyon.net/item/flutter-grocery-app-ui-kit/24282032](https://codecanyon.net/item/flutter-grocery-app-ui-kit/24282032)
+# Flutter Grocery Back-end includes:
 
-## Full Source Code UI + Firebase Backend :
-[https://codecanyon.net/item/flutter-grocery-app-ui-backend/24769375](https://codecanyon.net/item/flutter-grocery-app-ui-backend/24769375)
+* Login
+* Adding items for check-out
+* Payment API
+* Admin panel
 
 ## 📸 Screenshots :
 
@@ -23,6 +24,6 @@
 
 ## Author(s):
 
-### Senthil Kumar
+### Aayesha Nomani
 
 ## ⭐ Star the repo if you like what you see. ⭐
