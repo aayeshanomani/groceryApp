@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:grocery_home/views/home/adminhome.dart';
 import 'package:grocery_home/views/home/home.dart';
 import 'package:grocery_home/views/home/services/database.dart';
 import 'package:grocery_home/views/home/services/helper.dart';
@@ -111,10 +112,18 @@ class _LoginState extends State<Login> {
                               } else {
                                 isLoggedIn = true;
                                 await Helper.saveUserloggedIn(true);
-                                Navigator.pushReplacement(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Home()));
+                                username = _username;
+                                await Helper.saveUsername(username);
+                                if (_username == "admin")
+                                  Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => adminHome()));
+                                else
+                                  Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => Home()));
                               }
                             },
                             child: Text("Sign in"),

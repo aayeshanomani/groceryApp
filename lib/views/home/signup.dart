@@ -153,6 +153,9 @@ class _SignUpState extends State<SignUp> {
 
                                 isLoggedIn = true;
                                 Helper.saveUserloggedIn(true);
+
+                                username = _username;
+                                Helper.saveUsername(username);
                                 Navigator.pushReplacement(
                                     context,
                                     MaterialPageRoute(

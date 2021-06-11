@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_home/views/home/adminhome.dart';
 import 'package:grocery_home/views/home/home.dart';
 import 'package:grocery_home/views/home/login.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -12,6 +13,8 @@ void main() async {
   }
   if (isLoggedIn == null) {
     isLoggedIn = false;
+  } else {
+    username = await Helper.getUsername();
   }
   runApp(MyApp());
 }
@@ -43,7 +46,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: rosemadder,
         accentColor: darkSeaGreen,
       ),
-      home: isLoggedIn ? Home() : Login(),
+      home: isLoggedIn ? username=='admin'? adminHome() : Home() : Login(),
     );
   }
 }
