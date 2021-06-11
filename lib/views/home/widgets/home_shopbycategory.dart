@@ -31,25 +31,17 @@ class HomeShopByCategoryState extends State<HomeShopByCategory> {
     return Container(
       padding: EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
       height: MediaQuery.of(context).size.height / 6,
-      child: ListView.builder(
-        primary: false,
-        scrollDirection: Axis.horizontal,
-        shrinkWrap: true,
-        itemCount: allCategories == null ? 0 : allCategories.length,
-        itemBuilder: (BuildContext context, int index) {
-          var category = allCategories[index];
-
-          return new GestureDetector(
-            onTap: () => _onTileClicked(index),
+      child:  GestureDetector(
+            onTap: (){},
             child: ShopByCategory(
-              img: category.category_img,
-              category_name: category.category_name,
+              img: "assets/category/Category4.jpg",
+              category_name: "Vegetables",
               color1: Color.fromARGB(100, 0, 0, 0),
               color2: Color.fromARGB(100, 0, 0, 0),
             ),
-          );
-        },
-      ),
+      )
+        
+      
     );
   }
 
@@ -90,12 +82,20 @@ class ShopByCategoryState extends State<ShopByCategory> {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(8.0),
         child: Stack(
+          
           children: <Widget>[
-            Image.asset(
-              widget.img,
-              height: MediaQuery.of(context).size.height / 6,
-              width: MediaQuery.of(context).size.height / 6,
-              fit: BoxFit.cover,
+          
+            Container(
+              decoration: BoxDecoration
+              (
+                borderRadius: BorderRadius.circular(8.0),
+              ),
+              child: Image.asset(
+                widget.img,
+                height: MediaQuery.of(context).size.height / 6,
+                width: MediaQuery.of(context).size.height / 6,
+                fit: BoxFit.cover,
+              ),
             ),
             Container(
               decoration: BoxDecoration(
@@ -114,25 +114,23 @@ class ShopByCategoryState extends State<ShopByCategory> {
               height: MediaQuery.of(context).size.height / 6,
               width: MediaQuery.of(context).size.height / 6,
             ),
-            Center(
-              child: Container(
-                height: MediaQuery.of(context).size.height / 6,
-                width: MediaQuery.of(context).size.height / 6,
-                padding: EdgeInsets.all(1),
-                constraints: BoxConstraints(
-                  minWidth: 20,
-                  minHeight: 20,
-                ),
-                child: Center(
-                  child: Text(
-                    widget.category_name,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    textAlign: TextAlign.center,
+            Container(
+              height: MediaQuery.of(context).size.height / 6,
+              width: MediaQuery.of(context).size.height / 6,
+              padding: EdgeInsets.all(1),
+              constraints: BoxConstraints(
+                minWidth: 20,
+                minHeight: 20,
+              ),
+              child: Center(
+                child: Text(
+                  widget.category_name,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
                   ),
+                  textAlign: TextAlign.center,
                 ),
               ),
             ),

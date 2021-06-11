@@ -12,26 +12,9 @@ class HomeShowRecentOrders extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
       width: MediaQuery.of(context).size.width,
       height: 200,
-      child: ListView.builder(
-        primary: false,
-        shrinkWrap: true,
-        scrollDirection: Axis.horizontal,
-        itemCount: recent_order == null ? 0 : recent_order.length,
-        itemBuilder: (BuildContext context, int index) {
-          Map product = recent_order[index];
-
-          return Padding(
-            padding: EdgeInsets.only(right: 10.0),
-            child: RecentOrders(
-                img: product["img"],
-                product_name: product["product_name"],
-                quantity: product["quantity"],
-                price: product["price"]),
-          );
-        },
-      ),
+      
     );
-    ;
+    
   }
 }
 
