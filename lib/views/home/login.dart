@@ -104,7 +104,10 @@ class _LoginState extends State<Login> {
                       children: [
                         ElevatedButton(
                             onPressed: () async {
-                              login = !login;
+                              setState(() {
+                                login = !login;
+                              });
+
                               if (await Database()
                                   .checkPassword(_username, _password)) {
                                 _showMyDialog(

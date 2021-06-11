@@ -1,10 +1,16 @@
 # This is a generated file; do not edit or check into version control.
 cloud_firestore=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.14.4/
 cloud_firestore_web=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-0.2.1+2/
+firebase_analytics=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_analytics-6.3.0/
+firebase_analytics_web=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_analytics_web-0.1.1/
 firebase_auth=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.18.4+1/
 firebase_auth_web=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-0.3.2+3/
 firebase_core=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.5.3/
 firebase_core_web=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.2.1+1/
+firebase_storage=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-5.2.0/
+firebase_storage_web=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_web-0.1.1+1/
+flutter_plugin_android_lifecycle=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/
+image_picker=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.7+22/
 path_provider_linux=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.0.0/
 path_provider_windows=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.1/
 shared_preferences=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-2.0.6/

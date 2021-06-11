@@ -25,11 +25,16 @@ dependencies:
   cupertino_icons: ^0.1.2
   carousel_pro: ^0.0.13
   email_auth:
-  firebase_core: ^0.5.0
+  firebase_storage: 
+  firebase_core: ^0.5.3
+  firebase_analytics: 
   firebase_auth: ^0.18.0
   shared_preferences: 
   cloud_firestore: 
   modal_progress_hud: ^0.1.3
+  font_awesome_flutter: ^9.1.0
+  image_picker: 
+  
 
 dev_dependencies:
   flutter_test:

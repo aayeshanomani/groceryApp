@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
 
 class Database {
   addUser(Map<String, dynamic> userData, String username) {
@@ -40,5 +41,17 @@ class Database {
         .get();
     print(result);
     return result.docs.isEmpty;
+  }
+
+  uploadVeggie(Map data, String name) {
+    FirebaseFirestore.instance
+        .collection("vegetables")
+        .doc(name)
+        .set(data, SetOptions(merge: true))
+        .then((value) {
+      print("Veggie added.");
+    }).catchError((err) {
+      print(err.toString());
+    });
   }
 }

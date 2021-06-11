@@ -5,32 +5,39 @@ INJECTED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/Andr
 INJECTED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:1:1-41:12
 INJECTED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:1:1-41:12
 MERGED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:1:1-41:12
+MERGED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-19:12
 MERGED from [:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [:flutter_plugin_android_lifecycle] /home/aayesha/codes/Flutter-Grocery-Home/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:shared_preferences] /home/aayesha/codes/Flutter-Grocery-Home/build/shared_preferences/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a562eab97223fa3f3f1f8e2a8f214d94/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-core:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c0deeb3df548e66850e3a65104544b84/jetified-firebase-core-19.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-analytics:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/51c8ec8da777f5b5de0b94999209ffaf/jetified-firebase-analytics-19.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/aa5c9d71e49d94ddd96894f0d2fe3b32/jetified-firebase-auth-21.0.1/AndroidManifest.xml:17:1-83:12
 MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:17:1-36:12
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/b037ec23770d46f1f24d2392689b3a67/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/jetified-firebase-installations-17.0.0/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/b037ec23770d46f1f24d2392689b3a67/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta01] /home/aayesha/.gradle/caches/transforms-2/files-2.1/0804391a8feec84b67a5da249b1a488e/jetified-firebase-appcheck-interop-16.0.0-beta01/AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.firebase:firebase-common:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:15:1-40:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4ba2211be7961cd084f94b61720824c6/exifinterface-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/44f8d1ee0be09a27bb098a5daf51c63a/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9ace64ef20aabba8ff19d02c5098c10f/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a8e020c564aed18e8ed957df2c5757e1/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/538218237693c51a7f3aab01e8fb86e8/jetified-play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:17:1-46:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cde03bfce13d951d22edc8daa86f6b48/jetified-play-services-measurement-sdk-19.0.0/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/629373d4bbcff08143d7a9d12d28a65a/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:15:1-23:12
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/2bf10c92d9153cfb2c1ea68f8039b5a6/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/3f8b691acb1381846d75ca1ccd1e6932/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/46fbf8da025caa52b77eca1d883e9d4e/jetified-play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:17:1-27:12
 MERGED from [com.google.android.gms:play-services-measurement-base:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/961ef467297b48609bdf031ab55e64a9/jetified-play-services-measurement-base-19.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/d941444ac7a095472cb9693abaaedccd/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/629373d4bbcff08143d7a9d12d28a65a/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/2bf10c92d9153cfb2c1ea68f8039b5a6/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/886b72104344a81ba4682099cc09e6f4/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/76084eab76eccf356e7e6b42b30265c3/jetified-play-services-basement-17.1.0/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9bd632f74bd918bb8c6ecd4a06be8cb6/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -51,14 +58,14 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/aayesha/.gradle/c
 MERGED from [androidx.savedstate:savedstate:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/3645ec191b4820857eea3999838bb819/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/6e70eb1022907a65568769c412486936/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/0cf45ac27d883fec1562c604e4e419d0/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c6f5b3cd4cbfa1db55e76b07912f3740/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/1e26be816dae9ed47e50db3e9b1d16b0/jetified-firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/5638339a343433508d77f575b3c34252/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/1c9163fa79510bb444974bfbdbc90ed3/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4965e5b6f45e43c4e2fa10aa6bc086d5/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c6f5b3cd4cbfa1db55e76b07912f3740/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/3beecf4f2cc1155a8fc167b059e7e9c5/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/12f5baadd5d1a3a114f657a42ab1cdfa/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4ac42486f81acdc4a205ad9e432e06b/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4965e5b6f45e43c4e2fa10aa6bc086d5/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a8cb0a9578fd34f4f7b569bc9cc33d50/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/74a57255a2815f7692e61cdae3dcb85c/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.28.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/626f1ca1b27148be4510e1a863e73171/jetified-grpc-android-1.28.0/AndroidManifest.xml:2:1-13:12
@@ -81,12 +88,18 @@ INJECTED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/debug/And
 		ADDED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:1:11-69
 application
 ADDED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:9:5-40:19
+MERGED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-17:19
+MERGED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-17:19
 MERGED from [:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-20:19
 MERGED from [com.google.firebase:firebase-core:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c0deeb3df548e66850e3a65104544b84/jetified-firebase-core-19.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c0deeb3df548e66850e3a65104544b84/jetified-firebase-core-19.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/51c8ec8da777f5b5de0b94999209ffaf/jetified-firebase-analytics-19.0.0/AndroidManifest.xml:7:5-20
@@ -95,12 +108,16 @@ MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/cac
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/aa5c9d71e49d94ddd96894f0d2fe3b32/jetified-firebase-auth-21.0.1/AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/b037ec23770d46f1f24d2392689b3a67/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/b037ec23770d46f1f24d2392689b3a67/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/b037ec23770d46f1f24d2392689b3a67/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/b037ec23770d46f1f24d2392689b3a67/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta01] /home/aayesha/.gradle/caches/transforms-2/files-2.1/0804391a8feec84b67a5da249b1a488e/jetified-firebase-appcheck-interop-16.0.0-beta01/AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta01] /home/aayesha/.gradle/caches/transforms-2/files-2.1/0804391a8feec84b67a5da249b1a488e/jetified-firebase-appcheck-interop-16.0.0-beta01/AndroidManifest.xml:24:5-20
 MERGED from [com.google.firebase:firebase-common:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
 MERGED from [com.google.firebase:firebase-common:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9ace64ef20aabba8ff19d02c5098c10f/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
@@ -111,8 +128,6 @@ MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aaye
 MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cde03bfce13d951d22edc8daa86f6b48/jetified-play-services-measurement-sdk-19.0.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cde03bfce13d951d22edc8daa86f6b48/jetified-play-services-measurement-sdk-19.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/2bf10c92d9153cfb2c1ea68f8039b5a6/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/2bf10c92d9153cfb2c1ea68f8039b5a6/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:28:5-29:19
 MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:28:5-29:19
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/3f8b691acb1381846d75ca1ccd1e6932/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
@@ -121,6 +136,8 @@ MERGED from [com.google.android.gms:play-services-measurement-base:19.0.0] /home
 MERGED from [com.google.android.gms:play-services-measurement-base:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/961ef467297b48609bdf031ab55e64a9/jetified-play-services-measurement-base-19.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/d941444ac7a095472cb9693abaaedccd/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/d941444ac7a095472cb9693abaaedccd/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/2bf10c92d9153cfb2c1ea68f8039b5a6/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/2bf10c92d9153cfb2c1ea68f8039b5a6/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/886b72104344a81ba4682099cc09e6f4/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/886b72104344a81ba4682099cc09e6f4/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/76084eab76eccf356e7e6b42b30265c3/jetified-play-services-basement-17.1.0/AndroidManifest.xml:22:5-26:19
@@ -181,12 +198,20 @@ uses-sdk
 INJECTED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml
+MERGED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /home/aayesha/codes/Flutter-Grocery-Home/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /home/aayesha/codes/Flutter-Grocery-Home/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences] /home/aayesha/codes/Flutter-Grocery-Home/build/shared_preferences/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences] /home/aayesha/codes/Flutter-Grocery-Home/build/shared_preferences/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a562eab97223fa3f3f1f8e2a8f214d94/multidex-2.0.0/AndroidManifest.xml:20:5-43
@@ -199,14 +224,20 @@ MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/cac
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/aa5c9d71e49d94ddd96894f0d2fe3b32/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/b037ec23770d46f1f24d2392689b3a67/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/b037ec23770d46f1f24d2392689b3a67/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/b037ec23770d46f1f24d2392689b3a67/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/b037ec23770d46f1f24d2392689b3a67/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta01] /home/aayesha/.gradle/caches/transforms-2/files-2.1/0804391a8feec84b67a5da249b1a488e/jetified-firebase-appcheck-interop-16.0.0-beta01/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta01] /home/aayesha/.gradle/caches/transforms-2/files-2.1/0804391a8feec84b67a5da249b1a488e/jetified-firebase-appcheck-interop-16.0.0-beta01/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-common:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4ba2211be7961cd084f94b61720824c6/exifinterface-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4ba2211be7961cd084f94b61720824c6/exifinterface-1.3.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/44f8d1ee0be09a27bb098a5daf51c63a/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/44f8d1ee0be09a27bb098a5daf51c63a/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9ace64ef20aabba8ff19d02c5098c10f/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
@@ -219,10 +250,6 @@ MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aaye
 MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cde03bfce13d951d22edc8daa86f6b48/jetified-play-services-measurement-sdk-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cde03bfce13d951d22edc8daa86f6b48/jetified-play-services-measurement-sdk-19.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/629373d4bbcff08143d7a9d12d28a65a/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/629373d4bbcff08143d7a9d12d28a65a/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/2bf10c92d9153cfb2c1ea68f8039b5a6/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/2bf10c92d9153cfb2c1ea68f8039b5a6/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/3f8b691acb1381846d75ca1ccd1e6932/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
@@ -233,6 +260,10 @@ MERGED from [com.google.android.gms:play-services-measurement-base:19.0.0] /home
 MERGED from [com.google.android.gms:play-services-measurement-base:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/961ef467297b48609bdf031ab55e64a9/jetified-play-services-measurement-base-19.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/d941444ac7a095472cb9693abaaedccd/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/d941444ac7a095472cb9693abaaedccd/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/629373d4bbcff08143d7a9d12d28a65a/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/629373d4bbcff08143d7a9d12d28a65a/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/2bf10c92d9153cfb2c1ea68f8039b5a6/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/2bf10c92d9153cfb2c1ea68f8039b5a6/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/886b72104344a81ba4682099cc09e6f4/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/886b72104344a81ba4682099cc09e6f4/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/76084eab76eccf356e7e6b42b30265c3/jetified-play-services-basement-17.1.0/AndroidManifest.xml:20:5-44
@@ -273,22 +304,22 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/aayesha/.gradle/
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/6e70eb1022907a65568769c412486936/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/0cf45ac27d883fec1562c604e4e419d0/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/0cf45ac27d883fec1562c604e4e419d0/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c6f5b3cd4cbfa1db55e76b07912f3740/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c6f5b3cd4cbfa1db55e76b07912f3740/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/1e26be816dae9ed47e50db3e9b1d16b0/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/1e26be816dae9ed47e50db3e9b1d16b0/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/5638339a343433508d77f575b3c34252/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/5638339a343433508d77f575b3c34252/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/1c9163fa79510bb444974bfbdbc90ed3/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/1c9163fa79510bb444974bfbdbc90ed3/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4965e5b6f45e43c4e2fa10aa6bc086d5/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4965e5b6f45e43c4e2fa10aa6bc086d5/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c6f5b3cd4cbfa1db55e76b07912f3740/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c6f5b3cd4cbfa1db55e76b07912f3740/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/3beecf4f2cc1155a8fc167b059e7e9c5/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/3beecf4f2cc1155a8fc167b059e7e9c5/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/12f5baadd5d1a3a114f657a42ab1cdfa/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/12f5baadd5d1a3a114f657a42ab1cdfa/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4ac42486f81acdc4a205ad9e432e06b/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4ac42486f81acdc4a205ad9e432e06b/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4965e5b6f45e43c4e2fa10aa6bc086d5/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4965e5b6f45e43c4e2fa10aa6bc086d5/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a8cb0a9578fd34f4f7b569bc9cc33d50/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a8cb0a9578fd34f4f7b569bc9cc33d50/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/74a57255a2815f7692e61cdae3dcb85c/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
@@ -305,10 +336,14 @@ INJECTED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/debug/And
 		INJECTED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-67
+MERGED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/aa5c9d71e49d94ddd96894f0d2fe3b32/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/aa5c9d71e49d94ddd96894f0d2fe3b32/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:27:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
@@ -321,8 +356,46 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /h
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/46fbf8da025caa52b77eca1d883e9d4e/jetified-play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from /home/aayesha/codes/Flutter-Grocery-Home/android/app/src/debug/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/aa5c9d71e49d94ddd96894f0d2fe3b32/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/aa5c9d71e49d94ddd96894f0d2fe3b32/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/46fbf8da025caa52b77eca1d883e9d4e/jetified-play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/46fbf8da025caa52b77eca1d883e9d4e/jetified-play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.28.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/626f1ca1b27148be4510e1a863e73171/jetified-grpc-android-1.28.0/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.28.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/626f1ca1b27148be4510e1a863e73171/jetified-grpc-android-1.28.0/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/46fbf8da025caa52b77eca1d883e9d4e/jetified-play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/46fbf8da025caa52b77eca1d883e9d4e/jetified-play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-65
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:19
+MERGED from [:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
@@ -331,6 +404,8 @@ MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/cac
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/aa5c9d71e49d94ddd96894f0d2fe3b32/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
 MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:30:9-36:19
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
@@ -344,13 +419,25 @@ MERGED from [com.google.firebase:firebase-common:20.0.0] /home/aayesha/.gradle/c
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from [:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:8:18-89
+		ADDED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:85
+	android:value
+		ADDED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-82
+	android:name
+		ADDED from [:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-127
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
 ADDED from [:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
 		ADDED from [:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-126
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
 ADDED from [:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
@@ -363,24 +450,30 @@ ADDED from [:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/fireb
 		ADDED from [:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/aa5c9d71e49d94ddd96894f0d2fe3b32/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:13:5-79
-MERGED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:13:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
-MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/46fbf8da025caa52b77eca1d883e9d4e/jetified-play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/46fbf8da025caa52b77eca1d883e9d4e/jetified-play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:24:5-79
-MERGED from [io.grpc:grpc-android:1.28.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/626f1ca1b27148be4510e1a863e73171/jetified-grpc-android-1.28.0/AndroidManifest.xml:11:5-79
-MERGED from [io.grpc:grpc-android:1.28.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/626f1ca1b27148be4510e1a863e73171/jetified-grpc-android-1.28.0/AndroidManifest.xml:11:5-79
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/aa5c9d71e49d94ddd96894f0d2fe3b32/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:22-76
+		ADDED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:8:22-78
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-19:20
+	android:grantUriPermissions
+		ADDED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-47
+	android:authorities
+		ADDED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-74
+	android:exported
+		ADDED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-37
+	android:name
+		ADDED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-18:75
+	android:resource
+		ADDED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-72
+	android:name
+		ADDED from [:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-67
 activity#com.google.firebase.auth.internal.GenericIdpActivity
 ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/aa5c9d71e49d94ddd96894f0d2fe3b32/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
 	android:excludeFromRecents
@@ -455,16 +548,12 @@ ADDED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle
 		ADDED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:22:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:23.0.1] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9462a20fd934ebb5d788c2110a920218/jetified-firebase-firestore-23.0.1/AndroidManifest.xml:21:17-111
-uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:24:5-68
-MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408f5abf221494e347df64f8bd007d95/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/46fbf8da025caa52b77eca1d883e9d4e/jetified-play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/46fbf8da025caa52b77eca1d883e9d4e/jetified-play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:25:5-68
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:33:13-35:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:35:17-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:24:22-65
+		ADDED from [com.google.firebase:firebase-storage:20.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f2e60f1f93a0efa46b835b7590f585a0/jetified-firebase-storage-20.0.0/AndroidManifest.xml:34:17-107
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
 ADDED from [com.google.android.gms:play-services-measurement-api:19.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:30:13-32:85
 	android:value

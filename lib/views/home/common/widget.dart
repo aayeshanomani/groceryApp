@@ -16,16 +16,11 @@ Future showMyDialog(
           ),
         ),
         actions: <Widget>[
+          
           TextButton(
-            child: const Text('Cancel', style: TextStyle(color: Colors.grey),),
+            child: const Text('OK', style: TextStyle(color: Colors.blue)),
             onPressed: () {
-              Navigator.of(context).pop('cancel');
-            },
-          ),
-          TextButton(
-            child: const Text('Yes', style: TextStyle(color: Colors.red)),
-            onPressed: () {
-              Navigator.of(context).pop('yes');
+              Navigator.of(context).pop();
             },
           ),
         ],
