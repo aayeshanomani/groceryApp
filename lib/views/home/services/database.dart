@@ -54,4 +54,12 @@ class Database {
       print(err.toString());
     });
   }
+
+  getVeggie() {
+    return FirebaseFirestore.instance.collection("vegetables").snapshots();
+  }
+
+  delVeggie(String name) {
+    FirebaseFirestore.instance.collection("vegetables").doc(name).delete();
+  }
 }
