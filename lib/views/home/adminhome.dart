@@ -255,7 +255,7 @@ class _adminHomeState extends State<adminHome> {
                                               child: Text(
                                                 "Min. Quantity: " +
                                                     snapshot.data.documents[i]
-                                                        ['price'],
+                                                        ['minQuantity'],
                                               ),
                                             )
                                           ],

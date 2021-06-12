@@ -243,9 +243,15 @@ class _AddItemsState extends State<AddItems> {
   }
 
   String uploadImageToFirebase(BuildContext context) {
+    if (imageFile == null) {
+      showMyDialog(context, "Error", "Image file not uploaded");
+      setState(() {
+        load = false;
+      });
+    }
     File _imageFile = File(imageFile.path);
     String fileName = basename(_imageFile.path);
-    String url;
+    String url = "";
     Reference firebaseStorageRef =
         FirebaseStorage.instance.ref().child('uploads/$fileName');
     UploadTask uploadTask = firebaseStorageRef.putFile(_imageFile);
@@ -254,7 +260,7 @@ class _AddItemsState extends State<AddItems> {
       url = url.toString();
       print(url);
 
-      if (name != "" && price != "" && minq != "") {
+      if (name != "" && price != "" && minq != "" && url != "") {
         Map<String, dynamic> data = {
           "vegName": name,
           "price": price,
@@ -270,6 +276,8 @@ class _AddItemsState extends State<AddItems> {
             Navigator.pop(context);
           });
         });
+      } else {
+        showMyDialog(context, "Error", "Fill in all the fields.");
       }
     });
   }

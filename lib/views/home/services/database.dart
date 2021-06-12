@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
+import 'helper.dart';
+
 class Database {
   addUser(Map<String, dynamic> userData, String username) {
     bool add;
@@ -61,5 +63,31 @@ class Database {
 
   delVeggie(String name) {
     FirebaseFirestore.instance.collection("vegetables").doc(name).delete();
+  }
+
+  addToCart(String name, Map data) {
+    FirebaseFirestore.instance
+        .collection("users")
+        .doc(username)
+        .collection("cart")
+        .doc(name)
+        .set(data, SetOptions(merge: true));
+  }
+
+  getCart() {
+    return FirebaseFirestore.instance
+        .collection("users")
+        .doc(username)
+        .collection("cart")
+        .snapshots();
+  }
+
+  delItemFromCart(String name) {
+    FirebaseFirestore.instance
+        .collection("users")
+        .doc(username)
+        .collection("cart")
+        .doc(name)
+        .delete();
   }
 }
