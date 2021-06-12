@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_home/models/categories.dart';
 import 'package:grocery_home/views/home/model/grocery_categories.dart';
+import 'package:grocery_home/views/home/veggie.dart';
 
 class HomeShopByCategory extends StatefulWidget {
   @override
@@ -29,20 +30,20 @@ class HomeShopByCategoryState extends State<HomeShopByCategory> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-      padding: EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
-      height: MediaQuery.of(context).size.height / 6,
-      child:  GestureDetector(
-            onTap: (){},
-            child: ShopByCategory(
-              img: "assets/category/Category4.jpg",
-              category_name: "Vegetables",
-              color1: Color.fromARGB(100, 0, 0, 0),
-              color2: Color.fromARGB(100, 0, 0, 0),
-            ),
-      )
-        
-      
-    );
+        padding: EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
+        height: MediaQuery.of(context).size.height / 6,
+        child: GestureDetector(
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Vegiie()));
+          },
+          child: ShopByCategory(
+            img: "assets/category/Category4.jpg",
+            category_name: "Vegetables",
+            color1: Color.fromARGB(100, 0, 0, 0),
+            color2: Color.fromARGB(100, 0, 0, 0),
+          ),
+        ));
   }
 
   // Function to be called on click
@@ -82,12 +83,9 @@ class ShopByCategoryState extends State<ShopByCategory> {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(8.0),
         child: Stack(
-          
           children: <Widget>[
-          
             Container(
-              decoration: BoxDecoration
-              (
+              decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: Image.asset(

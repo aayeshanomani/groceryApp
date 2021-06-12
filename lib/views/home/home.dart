@@ -4,9 +4,11 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:grocery_home/main.dart';
 import 'package:grocery_home/utils/colors_utils.dart';
 import 'package:grocery_home/utils/string_utils.dart';
+import 'package:grocery_home/views/home/cart.dart';
 import 'package:grocery_home/views/home/login.dart';
 import 'package:grocery_home/views/home/services/database.dart';
 import 'package:grocery_home/views/home/services/helper.dart';
+import 'package:grocery_home/views/home/veggie.dart';
 import 'package:grocery_home/views/home/widgets/home_appbar.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:grocery_home/views/home/widgets/home_shopbycategory.dart';
@@ -39,7 +41,12 @@ class HomeState extends State<StatefulWidget> {
       appBar: AppBar(
         title: Text("Home"),
         actions: [
-          IconButton(icon: Icon(FontAwesomeIcons.cartPlus), onPressed: (){})
+          IconButton(
+              icon: Icon(FontAwesomeIcons.cartPlus),
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Cart()));
+              })
         ],
       ),
       body: showBody(),
@@ -183,7 +190,10 @@ class HomeState extends State<StatefulWidget> {
                       fontWeight: FontWeight.w700),
                 ),
                 FlatButton(
-                    onPressed: _showAllBtnTapped,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Vegiie()));
+                    },
                     child: Text(
                       StringUtils.Show_All,
                       style: TextStyle(
@@ -221,7 +231,7 @@ class HomeState extends State<StatefulWidget> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Color(0xffF2C078),
-                                  borderRadius: BorderRadius.circular(37),
+                                  borderRadius: BorderRadius.circular(6),
                                 ),
                                 child: Row(
                                   children: [
@@ -237,7 +247,7 @@ class HomeState extends State<StatefulWidget> {
                                                   .data.documents[i]['photo']),
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(28)),
+                                                BorderRadius.circular(6)),
                                       ),
                                     ),
                                     Padding(
@@ -278,172 +288,178 @@ class HomeState extends State<StatefulWidget> {
                                         ],
                                       ),
                                     ),
-                                    StreamBuilder(
-                                        stream: Database().getCart(),
-                                        builder: (context, snapshot2) {
-                                          var j;
-                                          for (j = 0;
-                                              j <
-                                                  snapshot2
-                                                      .data.documents.length;
-                                              j++) {
-                                            if (snapshot2.data.documents[j]
-                                                    ["name"] ==
-                                                snapshot.data.documents[i]
-                                                    ["vegName"]) {
-                                              return Container(
-                                                decoration: BoxDecoration(
-                                                    border: Border.all(
-                                                        color:
-                                                            Color(0xff424B54)),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            82)),
-                                                child: Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.start,
-                                                  children: [
-                                                    Container(
-                                                      padding:
-                                                          const EdgeInsets.all(
-                                                              0.0),
-                                                      margin: EdgeInsets.all(0),
-                                                      child: IconButton(
-                                                          padding:
-                                                              EdgeInsets.all(
-                                                                  0.0),
-                                                          icon: Icon(
-                                                            Icons.remove,
-                                                            size: 18,
-                                                          ),
-                                                          onPressed: () {
-                                                            if (snapshot2.data
-                                                                        .documents[
-                                                                    j]["quan"] ==
-                                                                1) {
-                                                              Database().delItemFromCart(
-                                                                  snapshot2.data
-                                                                          .documents[j]
-                                                                      ["name"]);
-                                                            }
-                                                            else if (snapshot2.data
-                                                                        .documents[
-                                                                    j]["quan"] >
-                                                                1) {
-                                                              Map<String,
-                                                                      dynamic>
-                                                                  sata = {
-                                                                "name": snapshot
-                                                                        .data
-                                                                        .documents[i]
-                                                                    ["vegName"],
-                                                                "quan": snapshot2
-                                                                            .data
-                                                                            .documents[j]
-                                                                        [
-                                                                        "quan"] -
-                                                                    1,
-                                                                "price": snapshot
-                                                                        .data
-                                                                        .documents[
-                                                                    i]["price"]
-                                                              };
-                                                              Database().addToCart(
-                                                                  snapshot.data
-                                                                          .documents[i]
-                                                                      [
-                                                                      "vegName"],
-                                                                  sata);
-                                                                  
-                                                            }
+                                    Expanded(
+                                      child: StreamBuilder(
+                                          stream: Database().getCart(),
+                                          builder: (context, snapshot2) {
+                                            if (!snapshot2.hasData) return Container();
+                                            var j;
+                                            for (j = 0;
+                                                j <
+                                                    snapshot2
+                                                        .data.documents.length;
+                                                j++) {
+                                              if (snapshot2.data.documents[j]
+                                                      ["name"] ==
+                                                  snapshot.data.documents[i]
+                                                      ["vegName"]) {
+                                                return Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                        border: Border.all(
+                                                            color:
+                                                                Color(0xff424B54)),
+                                                        borderRadius:
+                                                            BorderRadius.circular(
+                                                                7),
+                                                                color: Color(0xffFDF0D5)
+                                                                ),
+                                                    child: Row(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment.start,
+                                                      children: [
+                                                        Expanded(
+                                                          child: Container(
                                                             
-                                                          }),
-                                                    ),
-                                                    Text(snapshot2.data
-                                                        .documents[j]["quan"]
-                                                        .toString()),
-                                                    Container(
-                                                      padding:
-                                                          const EdgeInsets.all(
-                                                              0.0),
-                                                      margin: EdgeInsets.all(0),
-                                                      child: IconButton(
-                                                          padding:
-                                                              EdgeInsets.all(
-                                                                  0.0),
-                                                          icon: Icon(
-                                                            Icons.add,
-                                                            size: 18,
+                                                            padding:
+                                                                const EdgeInsets.all(
+                                                                    0.0),
+                                                            margin: EdgeInsets.all(0),
+                                                            child: IconButton(
+                                                                padding:
+                                                                    EdgeInsets.all(
+                                                                        0.0),
+                                                                icon: Icon(
+                                                                  Icons.remove,
+                                                                  size: 18,
+                                                                ),
+                                                                onPressed: () {
+                                                                  if (snapshot2.data
+                                                                              .documents[
+                                                                          j]["quan"] ==
+                                                                      1) {
+                                                                    Database().delItemFromCart(
+                                                                        snapshot2.data
+                                                                                .documents[j]
+                                                                            ["name"]);
+                                                                  } else if (snapshot2
+                                                                              .data
+                                                                              .documents[
+                                                                          j]["quan"] >
+                                                                      1) {
+                                                                    Map<String,
+                                                                            dynamic>
+                                                                        sata = {
+                                                                      "name": snapshot
+                                                                              .data
+                                                                              .documents[i]
+                                                                          ["vegName"],
+                                                                      "quan": snapshot2
+                                                                                  .data
+                                                                                  .documents[j]
+                                                                              [
+                                                                              "quan"] -
+                                                                          1,
+                                                                      "price": snapshot
+                                                                              .data
+                                                                              .documents[
+                                                                          i]["price"]
+                                                                    };
+                                                                    Database().addToCart(
+                                                                        snapshot.data
+                                                                                .documents[i]
+                                                                            [
+                                                                            "vegName"],
+                                                                        sata);
+                                                                  }
+                                                                }),
                                                           ),
-                                                          onPressed: () {
-                                                            setState(() {
-                                                              Map<String,
-                                                                      dynamic>
-                                                                  sata = {
-                                                                "name": snapshot
-                                                                        .data
-                                                                        .documents[i]
-                                                                    ["vegName"],
-                                                                "quan": snapshot2
+                                                        ),
+                                                        Text(snapshot2.data
+                                                            .documents[j]["quan"]
+                                                            .toString()),
+                                                        Container(
+                                                          padding:
+                                                              const EdgeInsets.all(
+                                                                  0.0),
+                                                          margin: EdgeInsets.all(0),
+                                                          child: IconButton(
+                                                              padding:
+                                                                  EdgeInsets.all(
+                                                                      0.0),
+                                                              icon: Icon(
+                                                                Icons.add,
+                                                                size: 18,
+                                                              ),
+                                                              onPressed: () {
+                                                                setState(() {
+                                                                  Map<String,
+                                                                          dynamic>
+                                                                      sata = {
+                                                                    "name": snapshot
                                                                             .data
-                                                                            .documents[j]
-                                                                        [
-                                                                        "quan"] +
-                                                                    1,
-                                                                "price": snapshot
-                                                                        .data
-                                                                        .documents[
-                                                                    i]["price"]
-                                                              };
-                                                              Database().addToCart(
-                                                                  snapshot.data
-                                                                          .documents[i]
-                                                                      [
-                                                                      "vegName"],
-                                                                  sata);
-                                                            });
-                                                          }),
+                                                                            .documents[i]
+                                                                        ["vegName"],
+                                                                    "quan": snapshot2
+                                                                                .data
+                                                                                .documents[j]
+                                                                            [
+                                                                            "quan"] +
+                                                                        1,
+                                                                    "price": snapshot
+                                                                            .data
+                                                                            .documents[
+                                                                        i]["price"]
+                                                                  };
+                                                                  Database().addToCart(
+                                                                      snapshot.data
+                                                                              .documents[i]
+                                                                          [
+                                                                          "vegName"],
+                                                                      sata);
+                                                                });
+                                                              }),
+                                                        ),
+                                                      ],
                                                     ),
-                                                  ],
+                                                  ),
+                                                );
+                                              }
+                                            }
+                                            if (j ==
+                                                snapshot2.data.documents.length) {
+                                              return Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Container(
+                                                  child: ElevatedButton(
+                                                    style: ElevatedButton.styleFrom(
+                                                      primary: Color(0xffEB5E55),
+                                                      elevation: 1
+                                                    ),
+                                                    
+                                                    onPressed: () {
+                                                      Map<String, dynamic> sata = {
+                                                        "name": snapshot
+                                                                .data.documents[i]
+                                                            ["vegName"],
+                                                        "quan": 1,
+                                                        "price": snapshot.data
+                                                            .documents[i]["price"]
+                                                      };
+                                                      Database().addToCart(
+                                                          snapshot.data.documents[i]
+                                                              ["vegName"],
+                                                          sata);
+                                                    },
+                                                    child: Text("Add"),
+                                                  ),
                                                 ),
                                               );
                                             }
-                                          }
-                                          if (j ==
-                                              snapshot2.data.documents.length) {
-                                            return Container(
-                                              child: ElevatedButton(
-                                                style: ButtonStyle(
-                                                    shape: MaterialStateProperty.all<
-                                                            RoundedRectangleBorder>(
-                                                        RoundedRectangleBorder(
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        18.0),
-                                                            side: BorderSide(
-                                                                color: Colors
-                                                                    .red)))),
-                                                onPressed: () {
-                                                  Map<String, dynamic> sata = {
-                                                    "name": snapshot
-                                                            .data.documents[i]
-                                                        ["vegName"],
-                                                    "quan": 1,
-                                                    "price": snapshot.data
-                                                        .documents[i]["price"]
-                                                  };
-                                                  Database().addToCart(
-                                                      snapshot.data.documents[i]
-                                                          ["vegName"],
-                                                      sata);
-                                                },
-                                                child: Text("Add"),
-                                              ),
-                                            );
-                                          }
-                                          return Container();
-                                        })
+                                            return Container();
+                                          }),
+                                    )
                                   ],
                                 ),
                               ),

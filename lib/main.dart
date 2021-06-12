@@ -33,7 +33,7 @@ Map<int, Color> color = {
 };
 
 class MyApp extends StatelessWidget {
-  MaterialColor rosemadder = MaterialColor(0xffDF2935, color);
+  MaterialColor rosemadder = MaterialColor(0xffC2CFB2, color);
   MaterialColor darkSeaGreen = MaterialColor(0xff86BA90, color);
 
   // This widget is the root of your application.
