@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:grocery_home/views/home/paymentPage.dart';
 import 'package:grocery_home/views/home/services/database.dart';
 
 import 'common/loading.dart';
@@ -36,6 +37,7 @@ class _CartState extends State<Cart> {
                 StreamBuilder(
                   stream: Database().getCart(),
                   builder: (context, snapshot) {
+                    amount = 0;
                     for (var i = 0; i < snapshot.data.documents.length; i++) {
                       amount = amount +
                           int.parse(snapshot.data.documents[i]["price"]) *
@@ -297,7 +299,10 @@ class _CartState extends State<Cart> {
                                 style: ElevatedButton.styleFrom(
                                     primary: Color(0xff848C8E)),
                                 onPressed: () {
-                                  //ToDo: Check Out
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => PaymentPage()));
                                 },
                                 child: Text("Confirm Order"),
                               ),

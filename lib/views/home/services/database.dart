@@ -90,4 +90,15 @@ class Database {
         .doc(name)
         .delete();
   }
+
+  placeOrder(Map data) {
+    FirebaseFirestore.instance
+        .collection("ordersPlaced")
+        .doc()
+        .set(data, SetOptions(merge: true));
+  }
+
+  getOrders() {
+    return FirebaseFirestore.instance.collection("ordersPlaced").snapshots();
+  }
 }
