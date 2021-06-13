@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_home/views/home/common/loading.dart';
+import 'package:grocery_home/views/home/common/widget.dart';
 import 'package:grocery_home/views/home/services/database.dart';
 import 'package:grocery_home/views/home/services/helper.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
@@ -17,6 +18,15 @@ bool load = false;
 
 class _PaymentPageState extends State<PaymentPage> {
   @override
+  void initState() {
+    // TODO: implement initState
+    setState(() {
+      load = false;
+    });
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: ModalProgressHUD(
@@ -29,7 +39,10 @@ class _PaymentPageState extends State<PaymentPage> {
                 child: Container(
                   child: ElevatedButton(
                     onPressed: () {
-                      load = true;
+                      setState(() {
+                        load = true;
+                      });
+
                       var i;
                       for (i = 0; i < snapshot.data.documents.length; i++) {
                         Map<String, dynamic> data = {
@@ -51,12 +64,17 @@ class _PaymentPageState extends State<PaymentPage> {
                                   snapshot.data.documents[i]["quan"],
                           "address": "",
                           "urgent": "no",
+                          "status": "confirmed"
                         };
 
                         print(data.toString());
                         Database().placeOrder(data);
                         Database().delItemFromCart(data["name"]);
-                        Navigator.pop(context);
+                        showMyDialog(
+                                context, "Success", "Order placed successfully")
+                            .then((value) {
+                          Navigator.pop(context);
+                        });
                       }
                     },
                     child: Text("Pay and place order"),

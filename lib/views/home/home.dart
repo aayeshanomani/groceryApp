@@ -8,6 +8,7 @@ import 'package:grocery_home/views/home/cart.dart';
 import 'package:grocery_home/views/home/login.dart';
 import 'package:grocery_home/views/home/services/database.dart';
 import 'package:grocery_home/views/home/services/helper.dart';
+import 'package:grocery_home/views/home/user/yourOrders.dart';
 import 'package:grocery_home/views/home/veggie.dart';
 import 'package:grocery_home/views/home/widgets/home_appbar.dart';
 import 'package:carousel_pro/carousel_pro.dart';
@@ -82,6 +83,40 @@ class HomeState extends State<StatefulWidget> {
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           "Dashboard",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Divider(
+                  thickness: 2,
+                  indent: 20,
+                  endIndent: 20,
+                ),
+                ListTile(
+                  dense: true,
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => YourOrders()));
+                  },
+                  title: Row(
+                    children: <Widget>[
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Icon(
+                        FontAwesomeIcons.solidObjectGroup,
+                        color: Color(0xffA10702),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "Your Orders",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),

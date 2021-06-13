@@ -99,6 +99,36 @@ class Database {
   }
 
   getOrders() {
-    return FirebaseFirestore.instance.collection("ordersPlaced").snapshots();
+    return FirebaseFirestore.instance
+        .collection("ordersPlaced")
+        .orderBy("date", descending: true)
+        .orderBy("time", descending: true)
+        .snapshots();
+  }
+
+  getYourOrders() {
+    return FirebaseFirestore.instance
+        .collection("ordersPlaced")
+        .where("username", isEqualTo: username)
+        .orderBy("date")
+        .orderBy("time")
+        .snapshots();
+  }
+
+  getVeg(String name) {
+    return FirebaseFirestore.instance
+        .collection("vegetables")
+        .where("vegName", isEqualTo: name)
+        .snapshots();
+  }
+
+  getSpecOrder(String name, String date, String time) {
+    return FirebaseFirestore.instance
+        .collection("ordersPlaced")
+        .where("username", isEqualTo: username)
+        .where("name", isEqualTo: name)
+        .where("date", isEqualTo: date)
+        .where("time", isEqualTo: time)
+        .snapshots();
   }
 }
