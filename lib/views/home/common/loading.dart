@@ -23,8 +23,7 @@ class Loading extends StatelessWidget {
                 ),
               ),
             ),
-            Text('Loading...',
-            style: TextStyle(color: Color(0xffFAA613)),)
+            
           ],
         )
       ),

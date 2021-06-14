@@ -123,7 +123,8 @@ class _SpecOrderState extends State<SpecOrder> {
                                         Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Text(
-                                            "Status: "
+                                            "Status: "+snapshot.data.documents[0]
+                                                    ['status']
                                           ),
                                         ),
                       ],

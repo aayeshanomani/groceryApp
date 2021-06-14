@@ -50,11 +50,11 @@ class _PaymentPageState extends State<PaymentPage> {
                           "price": snapshot.data.documents[i]["price"],
                           "quan": snapshot.data.documents[i]["quan"],
                           "username": username,
-                          "date": DateTime.now().day.toString() +
+                          "date": DateTime.now().year.toString() +
                               "-" +
                               DateTime.now().month.toString() +
                               "-" +
-                              DateTime.now().year.toString(),
+                              DateTime.now().day.toString(),
                           "time": DateTime.now().hour.toString() +
                               ":" +
                               DateTime.now().minute.toString() +

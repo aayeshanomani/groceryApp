@@ -4,6 +4,8 @@ import 'package:grocery_home/views/home/common/widget.dart';
 import 'package:grocery_home/views/home/services/database.dart';
 import 'package:grocery_home/views/home/services/helper.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:grocery_home/views/home/user/admin/ordersDelivered.dart';
+import 'package:grocery_home/views/home/user/admin/ordersPlaced.dart';
 
 import 'common/loading.dart';
 import 'login.dart';
@@ -104,6 +106,74 @@ class _adminHomeState extends State<adminHome> {
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           "Dashboard",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Divider(
+                  thickness: 2,
+                  indent: 20,
+                  endIndent: 20,
+                ),
+                ListTile(
+                  dense: true,
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => OrdersPlaced()));
+                  },
+                  title: Row(
+                    children: <Widget>[
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Icon(
+                        FontAwesomeIcons.starOfLife,
+                        color: Color(0xffA10702),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "Orders Placed",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Divider(
+                  thickness: 2,
+                  indent: 20,
+                  endIndent: 20,
+                ),
+                ListTile(
+                  dense: true,
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => OrdersDelivered()));
+                  },
+                  title: Row(
+                    children: <Widget>[
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Icon(
+                        FontAwesomeIcons.levelDownAlt,
+                        color: Color(0xffA10702),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "Orders Delivered",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),

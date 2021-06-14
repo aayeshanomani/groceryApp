@@ -101,6 +101,16 @@ class Database {
   getOrders() {
     return FirebaseFirestore.instance
         .collection("ordersPlaced")
+        .where("status", isEqualTo: "confirmed")
+        .orderBy("date", descending: true)
+        .orderBy("time", descending: true)
+        .snapshots();
+  }
+
+  getDeliveredOrders() {
+    return FirebaseFirestore.instance
+        .collection("ordersPlaced")
+        .where("status", isEqualTo: "delivered")
         .orderBy("date", descending: true)
         .orderBy("time", descending: true)
         .snapshots();
@@ -110,8 +120,8 @@ class Database {
     return FirebaseFirestore.instance
         .collection("ordersPlaced")
         .where("username", isEqualTo: username)
-        .orderBy("date")
-        .orderBy("time")
+        .orderBy("date", descending: true)
+        .orderBy("time", descending: true)
         .snapshots();
   }
 
@@ -130,5 +140,22 @@ class Database {
         .where("date", isEqualTo: date)
         .where("time", isEqualTo: time)
         .snapshots();
+  }
+
+  getSpecOrderAdmin(String username, String name, String date, String time) {
+    return FirebaseFirestore.instance
+        .collection("ordersPlaced")
+        .where("username", isEqualTo: username)
+        .where("name", isEqualTo: name)
+        .where("date", isEqualTo: date)
+        .where("time", isEqualTo: time)
+        .snapshots();
+  }
+
+  orderDelivered(String uid) {
+    FirebaseFirestore.instance
+        .collection("ordersPlaced")
+        .doc(uid)
+        .set({"status": "delivered"}, SetOptions(merge: true));
   }
 }

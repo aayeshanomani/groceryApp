@@ -3,7 +3,9 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:grocery_home/views/home/common/loading.dart';
 import 'package:grocery_home/views/home/home.dart';
 import 'package:grocery_home/views/home/services/database.dart';
-import 'package:grocery_home/views/home/user/specOrder.dart';
+import 'package:grocery_home/views/home/adminhome.dart';
+
+import 'specOrder.dart';
 
 class OrdersPlaced extends StatefulWidget {
   const OrdersPlaced({Key key}) : super(key: key);
@@ -22,7 +24,7 @@ class _OrdersPlacedState extends State<OrdersPlaced> {
       ),
       body: SingleChildScrollView(
         child: StreamBuilder(
-          stream: Database().getYourOrders(),
+          stream: Database().getOrders(),
           builder: (context, snapshot) {
             if (!snapshot.hasData) return Loading();
             if (snapshot.data.documents.length == 0) {
@@ -34,7 +36,7 @@ class _OrdersPlacedState extends State<OrdersPlaced> {
                       height: 383,
                       child: Center(
                         child: Text(
-                            "Looks like you haven't placed any orders yet."),
+                            "Looks like you don't have any orders yet."),
                       ),
                     ),
                   ),
@@ -43,7 +45,7 @@ class _OrdersPlacedState extends State<OrdersPlaced> {
                     child: ElevatedButton(
                       onPressed: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Home()));
+                            MaterialPageRoute(builder: (context) => adminHome()));
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -75,6 +77,7 @@ class _OrdersPlacedState extends State<OrdersPlaced> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => SpecOrder(
+                                    username: snapshot.data.documents[i]["username"],
                                         name: snapshot.data.documents[i]
                                             ["name"],
                                         date: snapshot.data.documents[i]
@@ -125,6 +128,16 @@ class _OrdersPlacedState extends State<OrdersPlaced> {
                                           padding: const EdgeInsets.all(8.0),
                                           child: Text(
                                             snapshot.data.documents[i]['name'],
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(
+                                            "Ordered By - "+
+                                            snapshot.data.documents[i]['username'],
                                             style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 fontSize: 18),
