@@ -9,7 +9,7 @@ class Database {
     FirebaseFirestore.instance
         .collection("users")
         .doc(username)
-        .set(userData)
+        .set(userData, SetOptions(merge: true))
         .then((value) {
       print("User added.");
     }).catchError((err) {
@@ -157,5 +157,26 @@ class Database {
         .collection("ordersPlaced")
         .doc(uid)
         .set({"status": "delivered"}, SetOptions(merge: true));
+  }
+
+  addAdminToken(String token) {
+    FirebaseFirestore.instance
+        .collection("adminTokens")
+        .doc(username)
+        .set({"token": token}, SetOptions(merge: true));
+  }
+
+  addCustomerToken(String token) {
+    FirebaseFirestore.instance
+        .collection("cusTokens")
+        .doc(username)
+        .set({"token": token}, SetOptions(merge: true));
+  }
+
+  getUser(String username) {
+    return FirebaseFirestore.instance
+        .collection("users")
+        .where("username", isEqualTo: username)
+        .snapshots();
   }
 }

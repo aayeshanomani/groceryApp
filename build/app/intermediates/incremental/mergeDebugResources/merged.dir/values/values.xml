@@ -110,6 +110,7 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="default_web_client_id" translatable="false">73934770517-bu8h58h6of71p877qlfs33vee0uv2v7l.apps.googleusercontent.com</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="gcm_defaultSenderId" translatable="false">73934770517</string>
     <string name="google_api_key" translatable="false">AIzaSyCKlnpUiACJTfL4JFqN5Mpd-CqIWhfWWqw</string>
     <string name="google_app_id" translatable="false">1:73934770517:android:ee68cd746a962e8f189fdc</string>

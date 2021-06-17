@@ -1,3 +1,4 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_home/views/home/addItems.dart';
 import 'package:grocery_home/views/home/common/widget.dart';
@@ -53,6 +54,24 @@ Future _showMyDialog(
 }
 
 class _adminHomeState extends State<adminHome> {
+  final FirebaseMessaging _messaging = FirebaseMessaging();
+
+  readyPage() async {
+    await _messaging.getToken().then((value) {
+      print(value);
+
+      Database().addAdminToken(value);
+    });
+  }
+
+  @override
+  void initState() {
+    readyPage();
+
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -121,8 +140,10 @@ class _adminHomeState extends State<adminHome> {
                 ListTile(
                   dense: true,
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => OrdersPlaced()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => OrdersPlaced()));
                   },
                   title: Row(
                     children: <Widget>[
@@ -155,8 +176,10 @@ class _adminHomeState extends State<adminHome> {
                 ListTile(
                   dense: true,
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => OrdersDelivered()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => OrdersDelivered()));
                   },
                   title: Row(
                     children: <Widget>[
@@ -291,7 +314,8 @@ class _adminHomeState extends State<adminHome> {
                                               image: DecorationImage(
                                                 fit: BoxFit.fill,
                                                 image: NetworkImage(snapshot
-                                                    .data.documents[i]['photo']),
+                                                    .data
+                                                    .documents[i]['photo']),
                                               ),
                                               borderRadius:
                                                   BorderRadius.circular(28)),
@@ -302,7 +326,8 @@ class _adminHomeState extends State<adminHome> {
                                         child: Column(
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsets.all(8.0),
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
                                               child: Text(
                                                 snapshot.data.documents[i]
                                                     ['vegName'],
@@ -312,7 +337,8 @@ class _adminHomeState extends State<adminHome> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsets.all(8.0),
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
                                               child: Text(
                                                 "Rs. " +
                                                     snapshot.data.documents[i]
@@ -321,7 +347,8 @@ class _adminHomeState extends State<adminHome> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsets.all(8.0),
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
                                               child: Text(
                                                 "Min. Quantity: " +
                                                     snapshot.data.documents[i]

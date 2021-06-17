@@ -47,11 +47,28 @@
                         "endOffsets": "151"
                     },
                     "to": {
+                        "startLines": "21",
+                        "startColumns": "4",
+                        "startOffsets": "3111",
+                        "endColumns": "100",
+                        "endOffsets": "3207"
+                    }
+                },
+                {
+                    "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/res/values-fr-rCA/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "211",
+                        "endColumns": "100",
+                        "endOffsets": "311"
+                    },
+                    "to": {
                         "startLines": "20",
                         "startColumns": "4",
                         "startOffsets": "3006",
-                        "endColumns": "100",
-                        "endOffsets": "3102"
+                        "endColumns": "104",
+                        "endOffsets": "3106"
                     }
                 }
             ]

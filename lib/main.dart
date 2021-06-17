@@ -1,11 +1,16 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_home/views/home/adminhome.dart';
 import 'package:grocery_home/views/home/home.dart';
 import 'package:grocery_home/views/home/login.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:grocery_home/views/home/services/helper.dart';
+import 'package:grocery_home/views/home/services/pushNotifications.dart';
+
+
 
 void main() async {
+  
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   if (isLoggedIn == false) {
@@ -32,11 +37,16 @@ Map<int, Color> color = {
   900: Color.fromRGBO(136, 14, 79, 1),
 };
 
+
+
 class MyApp extends StatelessWidget {
+  
+
   MaterialColor rosemadder = MaterialColor(0xffC2CFB2, color);
+
   MaterialColor darkSeaGreen = MaterialColor(0xff86BA90, color);
 
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -46,7 +56,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: rosemadder,
         accentColor: darkSeaGreen,
       ),
-      home: isLoggedIn ? username=='admin'? adminHome() : Home() : Login(),
+      home: isLoggedIn
+          ? username == 'admin'
+              ? adminHome()
+              : Home()
+          : Login(),
     );
   }
 }

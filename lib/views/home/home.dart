@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:grocery_home/main.dart';
@@ -6,6 +7,7 @@ import 'package:grocery_home/utils/colors_utils.dart';
 import 'package:grocery_home/utils/string_utils.dart';
 import 'package:grocery_home/views/home/cart.dart';
 import 'package:grocery_home/views/home/login.dart';
+import 'package:grocery_home/views/home/photPage.dart';
 import 'package:grocery_home/views/home/services/database.dart';
 import 'package:grocery_home/views/home/services/helper.dart';
 import 'package:grocery_home/views/home/user/yourOrders.dart';
@@ -26,8 +28,18 @@ class Home extends StatefulWidget {
 }
 
 class HomeState extends State<StatefulWidget> {
+  FirebaseMessaging _messaging = FirebaseMessaging();
+  readyPage() async {
+    await _messaging.getToken().then((value) {
+      print(value);
+
+      Database().addCustomerToken(value);
+    });
+  }
+
   @override
   void initState() {
+    readyPage();
     // TODO: implement initState
     super.initState();
   }
@@ -50,7 +62,19 @@ class HomeState extends State<StatefulWidget> {
               })
         ],
       ),
-      body: showBody(),
+      body: StreamBuilder(
+          stream: Database().getUser(username),
+          builder: (context, snapshot) {
+            if (!snapshot.hasData) return Loading();
+
+            if (snapshot.data.documents[0]["photo1"] == null ||
+                snapshot.data.documents[0]["photo2"] == null ||
+                snapshot.data.documents[0]["photo3"] == null) {
+              print("no photo");
+              return PhotoPage();
+            }
+            return showBody();
+          }),
       drawer: Drawer(
         child: Center(
           child: Padding(
@@ -327,7 +351,8 @@ class HomeState extends State<StatefulWidget> {
                                       child: StreamBuilder(
                                           stream: Database().getCart(),
                                           builder: (context, snapshot2) {
-                                            if (!snapshot2.hasData) return Container();
+                                            if (!snapshot2.hasData)
+                                              return Container();
                                             var j;
                                             for (j = 0;
                                                 j <
@@ -339,90 +364,91 @@ class HomeState extends State<StatefulWidget> {
                                                   snapshot.data.documents[i]
                                                       ["vegName"]) {
                                                 return Padding(
-                                                  padding: const EdgeInsets.all(8.0),
+                                                  padding:
+                                                      const EdgeInsets.all(8.0),
                                                   child: Container(
                                                     decoration: BoxDecoration(
                                                         border: Border.all(
-                                                            color:
-                                                                Color(0xff424B54)),
+                                                            color: Color(
+                                                                0xff424B54)),
                                                         borderRadius:
-                                                            BorderRadius.circular(
-                                                                7),
-                                                                color: Color(0xffFDF0D5)
-                                                                ),
+                                                            BorderRadius
+                                                                .circular(7),
+                                                        color:
+                                                            Color(0xffFDF0D5)),
                                                     child: Row(
                                                       mainAxisAlignment:
-                                                          MainAxisAlignment.start,
+                                                          MainAxisAlignment
+                                                              .start,
                                                       children: [
                                                         Expanded(
                                                           child: Container(
-                                                            
                                                             padding:
-                                                                const EdgeInsets.all(
-                                                                    0.0),
-                                                            margin: EdgeInsets.all(0),
+                                                                const EdgeInsets
+                                                                    .all(0.0),
+                                                            margin:
+                                                                EdgeInsets.all(
+                                                                    0),
                                                             child: IconButton(
                                                                 padding:
-                                                                    EdgeInsets.all(
-                                                                        0.0),
+                                                                    EdgeInsets
+                                                                        .all(
+                                                                            0.0),
                                                                 icon: Icon(
                                                                   Icons.remove,
                                                                   size: 18,
                                                                 ),
                                                                 onPressed: () {
-                                                                  if (snapshot2.data
-                                                                              .documents[
-                                                                          j]["quan"] ==
+                                                                  if (snapshot2
+                                                                          .data
+                                                                          .documents[j]["quan"] ==
                                                                       1) {
-                                                                    Database().delItemFromCart(
-                                                                        snapshot2.data
-                                                                                .documents[j]
-                                                                            ["name"]);
+                                                                    Database().delItemFromCart(snapshot2
+                                                                            .data
+                                                                            .documents[j]
+                                                                        [
+                                                                        "name"]);
                                                                   } else if (snapshot2
-                                                                              .data
-                                                                              .documents[
-                                                                          j]["quan"] >
+                                                                          .data
+                                                                          .documents[j]["quan"] >
                                                                       1) {
                                                                     Map<String,
                                                                             dynamic>
                                                                         sata = {
                                                                       "name": snapshot
-                                                                              .data
-                                                                              .documents[i]
-                                                                          ["vegName"],
-                                                                      "quan": snapshot2
-                                                                                  .data
-                                                                                  .documents[j]
-                                                                              [
-                                                                              "quan"] -
-                                                                          1,
+                                                                          .data
+                                                                          .documents[i]["vegName"],
+                                                                      "quan":
+                                                                          snapshot2.data.documents[j]["quan"] -
+                                                                              1,
                                                                       "price": snapshot
-                                                                              .data
-                                                                              .documents[
-                                                                          i]["price"]
+                                                                          .data
+                                                                          .documents[i]["price"]
                                                                     };
                                                                     Database().addToCart(
-                                                                        snapshot.data
-                                                                                .documents[i]
-                                                                            [
-                                                                            "vegName"],
+                                                                        snapshot
+                                                                            .data
+                                                                            .documents[i]["vegName"],
                                                                         sata);
                                                                   }
                                                                 }),
                                                           ),
                                                         ),
-                                                        Text(snapshot2.data
-                                                            .documents[j]["quan"]
+                                                        Text(snapshot2
+                                                            .data
+                                                            .documents[j]
+                                                                ["quan"]
                                                             .toString()),
                                                         Container(
                                                           padding:
-                                                              const EdgeInsets.all(
-                                                                  0.0),
-                                                          margin: EdgeInsets.all(0),
+                                                              const EdgeInsets
+                                                                  .all(0.0),
+                                                          margin:
+                                                              EdgeInsets.all(0),
                                                           child: IconButton(
                                                               padding:
-                                                                  EdgeInsets.all(
-                                                                      0.0),
+                                                                  EdgeInsets
+                                                                      .all(0.0),
                                                               icon: Icon(
                                                                 Icons.add,
                                                                 size: 18,
@@ -435,23 +461,22 @@ class HomeState extends State<StatefulWidget> {
                                                                     "name": snapshot
                                                                             .data
                                                                             .documents[i]
-                                                                        ["vegName"],
+                                                                        [
+                                                                        "vegName"],
                                                                     "quan": snapshot2
-                                                                                .data
-                                                                                .documents[j]
-                                                                            [
-                                                                            "quan"] +
+                                                                            .data
+                                                                            .documents[j]["quan"] +
                                                                         1,
                                                                     "price": snapshot
                                                                             .data
-                                                                            .documents[
-                                                                        i]["price"]
+                                                                            .documents[i]
+                                                                        [
+                                                                        "price"]
                                                                   };
                                                                   Database().addToCart(
-                                                                      snapshot.data
-                                                                              .documents[i]
-                                                                          [
-                                                                          "vegName"],
+                                                                      snapshot
+                                                                          .data
+                                                                          .documents[i]["vegName"],
                                                                       sata);
                                                                 });
                                                               }),
@@ -463,27 +488,32 @@ class HomeState extends State<StatefulWidget> {
                                               }
                                             }
                                             if (j ==
-                                                snapshot2.data.documents.length) {
+                                                snapshot2
+                                                    .data.documents.length) {
                                               return Padding(
-                                                padding: const EdgeInsets.all(8.0),
+                                                padding:
+                                                    const EdgeInsets.all(8.0),
                                                 child: Container(
                                                   child: ElevatedButton(
-                                                    style: ElevatedButton.styleFrom(
-                                                      primary: Color(0xffEB5E55),
-                                                      elevation: 1
-                                                    ),
-                                                    
+                                                    style: ElevatedButton
+                                                        .styleFrom(
+                                                            primary: Color(
+                                                                0xffEB5E55),
+                                                            elevation: 1),
                                                     onPressed: () {
-                                                      Map<String, dynamic> sata = {
-                                                        "name": snapshot
-                                                                .data.documents[i]
+                                                      Map<String, dynamic>
+                                                          sata = {
+                                                        "name": snapshot.data
+                                                                .documents[i]
                                                             ["vegName"],
                                                         "quan": 1,
                                                         "price": snapshot.data
-                                                            .documents[i]["price"]
+                                                                .documents[i]
+                                                            ["price"]
                                                       };
                                                       Database().addToCart(
-                                                          snapshot.data.documents[i]
+                                                          snapshot.data
+                                                                  .documents[i]
                                                               ["vegName"],
                                                           sata);
                                                     },

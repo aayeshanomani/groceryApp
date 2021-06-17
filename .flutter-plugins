@@ -7,6 +7,7 @@ firebase_auth=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.da
 firebase_auth_web=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-0.3.2+3/
 firebase_core=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.5.3/
 firebase_core_web=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.2.1+1/
+firebase_messaging=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-7.0.3/
 firebase_storage=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-5.2.0/
 firebase_storage_web=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_web-0.1.1+1/
 flutter_plugin_android_lifecycle=/home/aayesha/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/

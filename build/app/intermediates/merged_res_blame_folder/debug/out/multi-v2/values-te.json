@@ -4,6 +4,23 @@
             "outputFile": "/home/aayesha/codes/Flutter-Grocery-Home/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml",
             "map": [
                 {
+                    "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/res/values-te/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "100",
+                        "endOffsets": "307"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2782",
+                        "endColumns": "104",
+                        "endOffsets": "2882"
+                    }
+                },
+                {
                     "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/72bff3236ef989b32a30b5c0e1502b60/core-1.1.0/res/values-te/values-te.xml",
                     "from": {
                         "startLines": "2",
@@ -13,11 +30,11 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "20",
+                        "startLines": "21",
                         "startColumns": "4",
-                        "startOffsets": "2782",
+                        "startOffsets": "2887",
                         "endColumns": "100",
-                        "endOffsets": "2878"
+                        "endOffsets": "2983"
                     }
                 },
                 {

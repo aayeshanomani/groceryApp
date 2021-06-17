@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_home/views/home/home.dart';
 import 'package:grocery_home/views/home/login.dart';
+import 'package:grocery_home/views/home/photPage.dart';
 import 'package:grocery_home/views/home/services/database.dart';
 import 'package:grocery_home/views/home/services/helper.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
@@ -146,7 +147,10 @@ class _SignUpState extends State<SignUp> {
                                 Map<String, dynamic> userData = {
                                   "username": _username,
                                   "email": _email,
-                                  "password": _password
+                                  "password": _password,
+                                  "photo1": null,
+                                  "photo2": null,
+                                  "photo3": null,
                                 };
 
                                 Database().addUser(userData, _username);
@@ -159,7 +163,7 @@ class _SignUpState extends State<SignUp> {
                                 Navigator.pushReplacement(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => Home()));
+                                        builder: (context) => PhotoPage()));
                               }
                             },
                             child: Text("Sign up"),
