@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 
 import 'helper.dart';
@@ -178,5 +179,31 @@ class Database {
         .collection("users")
         .where("username", isEqualTo: username)
         .snapshots();
+  }
+
+  getAddresses() {
+    return FirebaseFirestore.instance
+        .collection("users")
+        .doc(username)
+        .collection("addresses")
+        .snapshots();
+  }
+
+  saveAddress(Map data) {
+    FirebaseFirestore.instance
+        .collection("users")
+        .doc(username)
+        .collection("addresses")
+        .doc()
+        .set(data);
+  }
+
+  deleteAddress(String docId) {
+    FirebaseFirestore.instance
+        .collection("users")
+        .doc(username)
+        .collection("addresses")
+        .doc(docId)
+        .delete();
   }
 }

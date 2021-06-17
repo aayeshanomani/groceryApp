@@ -6,14 +6,14 @@ class Loading extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
           child: Container(
-        height: 300,
+        height: MediaQuery.of(context).size.height,
         color: Colors.grey[400],
         child: Column(
           children: <Widget>[
             Expanded(
               child: Container
               (
-                height: 500,
+               
                 child: Center(
                   child: SpinKitFadingCircle
                   (

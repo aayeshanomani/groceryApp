@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:grocery_home/views/home/addressPage.dart';
 import 'package:grocery_home/views/home/paymentPage.dart';
 import 'package:grocery_home/views/home/services/database.dart';
 
@@ -302,7 +303,7 @@ class _CartState extends State<Cart> {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => PaymentPage()));
+                                          builder: (context) => AddressPage()));
                                 },
                                 child: Text("Confirm Order"),
                               ),

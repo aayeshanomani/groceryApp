@@ -6,7 +6,8 @@ import 'package:grocery_home/views/home/services/helper.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 
 class PaymentPage extends StatefulWidget {
-  const PaymentPage({Key key}) : super(key: key);
+  const PaymentPage({Key key, this.address}) : super(key: key);
+  final String address;
 
   @override
   _PaymentPageState createState() => _PaymentPageState();
@@ -62,7 +63,7 @@ class _PaymentPageState extends State<PaymentPage> {
                           "amountPaid":
                               int.parse(snapshot.data.documents[i]["price"]) *
                                   snapshot.data.documents[i]["quan"],
-                          "address": "",
+                          "address": widget.address,
                           "urgent": "no",
                           "status": "confirmed"
                         };
