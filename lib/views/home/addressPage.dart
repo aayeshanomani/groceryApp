@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_home/views/home/addAddressPage.dart';
+import 'package:grocery_home/views/home/cart.dart';
 import 'package:grocery_home/views/home/common/loading.dart';
 import 'package:grocery_home/views/home/paymentPage.dart';
 import 'package:grocery_home/views/home/services/database.dart';
 
 class AddressPage extends StatefulWidget {
-  const AddressPage({Key key}) : super(key: key);
+  const AddressPage({Key key, this.amount}) : super(key: key);
+  final double amount;
 
   @override
   _AddressPageState createState() => _AddressPageState();
@@ -156,7 +158,7 @@ class _AddressPageState extends State<AddressPage> {
                                                                       '\n' +
                                                                       "Address Type: " +
                                                                       snapshot.data.documents[i]["type"] +
-                                                                      "\n")));
+                                                                      "\n", amount: widget.amount,)));
                                                     },
                                                     style: ElevatedButton
                                                         .styleFrom(

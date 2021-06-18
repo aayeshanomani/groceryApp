@@ -206,4 +206,6 @@ class Database {
         .doc(docId)
         .delete();
   }
+
+  
 }

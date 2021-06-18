@@ -15,7 +15,7 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
-  String _email, _password, _username, _confirmPassword;
+  String _email, _password, _username, _confirmPassword, _phoneNumber;
   final auth = FirebaseAuth.instance;
 
   bool signup = false;
@@ -88,6 +88,20 @@ class _SignUpState extends State<SignUp> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: TextField(
+                        keyboardType: TextInputType.number,
+                        decoration: InputDecoration(
+                          hintText: "Phone Number",
+                        ),
+                        onChanged: (val) {
+                          setState(() {
+                            _phoneNumber = val.trim();
+                          });
+                        },
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: TextField(
                         keyboardType: TextInputType.text,
                         decoration: InputDecoration(
                           hintText: "Username",
@@ -147,6 +161,7 @@ class _SignUpState extends State<SignUp> {
                                 Map<String, dynamic> userData = {
                                   "username": _username,
                                   "email": _email,
+                                  "phoneNumber": _phoneNumber,
                                   "password": _password,
                                   "photo1": null,
                                   "photo2": null,

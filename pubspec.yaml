@@ -36,6 +36,8 @@ dependencies:
   image_picker: ^0.6.7+14
   flutter_spinkit:
   firebase_messaging: 
+  razorpay_flutter:
+  fluttertoast: 
   
 
 dev_dependencies:
@@ -89,4 +91,5 @@ flutter:
     - assets/offers/Offer5.jpg
     - assets/icon.jpeg
     - assets/uploadPhoto.jpg
+    - assets/payment.jpg
 

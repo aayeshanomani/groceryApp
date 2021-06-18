@@ -5,7 +5,7 @@
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="16"
+8        android:minSdkVersion="21"
 9        android:targetSdkVersion="28" />
 10    <!--
 11         Flutter needs it to communicate with the running application
@@ -41,422 +41,480 @@
 27    -->
 28    <application
 28-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:9:5-44:19
-29        android:name="androidx.multidex.MultiDexApplication"
-30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-30-->[androidx.core:core:1.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/72bff3236ef989b32a30b5c0e1502b60/core-1.1.0/AndroidManifest.xml:24:18-86
-31        android:debuggable="true"
-32        android:icon="@mipmap/ic_launcher"
-32-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:11:9-43
-33        android:label="grocery_home" >
-33-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:10:9-37
-34        <activity
-34-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:12:9-43:20
-35            android:name="com.aay.groc.MainActivity"
-35-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:13:13-41
-36            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-36-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:16:13-144
-37            android:hardwareAccelerated="true"
-37-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:17:13-47
-38            android:launchMode="singleTop"
-38-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:14:13-43
-39            android:theme="@style/NormalTheme"
-39-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:15:13-47
-40            android:windowSoftInputMode="adjustResize" >
-40-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:18:13-55
-41            <meta-data
-41-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:19:13-21:37
-42                android:name="flutterEmbedding"
-42-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:20:17-48
-43                android:value="2" />
-43-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:21:17-34
-44            <!--
-45                 This keeps the window background of the activity showing
-46                 until Flutter renders its first frame. It can be removed if
-47                 there is no splash screen (such as the default splash screen
-48                 defined in @style/LaunchTheme).
-49            -->
-50            <meta-data
-50-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:26:13-28:67
-51                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-51-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:27:18-82
-52                android:resource="@drawable/launch_background" />
-52-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:28:18-64
-53
-54            <!-- Theme to apply as soon as Flutter begins rendering frames -->
-55            <meta-data
-55-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:31:13-34:20
-56                android:name="io.flutter.embedding.android.NormalTheme"
-56-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:32:18-73
-57                android:resource="@style/NormalTheme" />
-57-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:33:18-55
-58
-59            <intent-filter>
-59-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:35:13-38:29
-60                <action android:name="android.intent.action.MAIN" />
-60-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:36:17-68
-60-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:36:25-66
-61
-62                <category android:name="android.intent.category.LAUNCHER" />
-62-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:37:17-76
-62-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:37:27-74
-63            </intent-filter>
-64            <intent-filter>
-64-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:39:13-42:29
-65                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
-65-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:40:17-68
-65-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:40:25-66
-66
-67                <category android:name="android.intent.category.DEFAULT" />
-67-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:17-75
-67-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:27-73
-68            </intent-filter>
-69        </activity>
-70
-71        <service
-71-->[:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:19
-72            android:name="com.google.firebase.components.ComponentDiscoveryService"
-72-->[:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:18-89
-73            android:directBootAware="true"
-73-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
-74            android:exported="false" >
-74-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:51:13-37
-75            <meta-data
-75-->[:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:85
-76                android:name="com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar"
-76-->[:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-127
-77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-82
-78            <meta-data
-78-->[:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
-79                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-79-->[:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
-80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
-81            <meta-data
-81-->[:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
-82                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
-82-->[:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-126
-83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
-84            <meta-data
-84-->[:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
-85                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-85-->[:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-134
-86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
-87            <meta-data
-87-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-16:85
-88                android:name="com.google.firebase.components:io.flutter.plugins.firebasemessaging.FlutterFirebaseAppRegistrar"
-88-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-127
-89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-82
-90            <meta-data
-90-->[:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
-91                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-91-->[:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
-92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
-93            <meta-data
-93-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:52:13-54:85
-94                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-94-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:53:17-119
-95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:54:17-82
-96            <meta-data
-96-->[com.google.firebase:firebase-datatransport:17.0.10] /home/aayesha/.gradle/caches/transforms-2/files-2.1/6e6a1300b589cbf75626b32eecc358c1/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:28:13-30:85
-97                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-97-->[com.google.firebase:firebase-datatransport:17.0.10] /home/aayesha/.gradle/caches/transforms-2/files-2.1/6e6a1300b589cbf75626b32eecc358c1/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:29:17-115
-98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[com.google.firebase:firebase-datatransport:17.0.10] /home/aayesha/.gradle/caches/transforms-2/files-2.1/6e6a1300b589cbf75626b32eecc358c1/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:30:17-82
-99            <meta-data
-99-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:77:13-79:85
-100                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-100-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:78:17-109
-101                android:value="com.google.firebase.components.ComponentRegistrar" />
-101-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:79:17-82
-102            <meta-data
-102-->[com.google.firebase:firebase-iid:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/7b1ab4b8c35a35c4c1cccdce5362efd8/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
-103                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-103-->[com.google.firebase:firebase-iid:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/7b1ab4b8c35a35c4c1cccdce5362efd8/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
-104                android:value="com.google.firebase.components.ComponentRegistrar" />
-104-->[com.google.firebase:firebase-iid:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/7b1ab4b8c35a35c4c1cccdce5362efd8/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
-105            <meta-data
-105-->[com.google.firebase:firebase-firestore:22.1.2] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c8e07c095af4dfcbdfef1f80c5c0f5a9/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:20:13-22:85
-106                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-106-->[com.google.firebase:firebase-firestore:22.1.2] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c8e07c095af4dfcbdfef1f80c5c0f5a9/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:21:17-111
-107                android:value="com.google.firebase.components.ComponentRegistrar" />
-107-->[com.google.firebase:firebase-firestore:22.1.2] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c8e07c095af4dfcbdfef1f80c5c0f5a9/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:22:17-82
-108            <meta-data
-108-->[com.google.firebase:firebase-storage:19.2.2] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408a0ccbe3d4075e7776fc1c3b036061/jetified-firebase-storage-19.2.2/AndroidManifest.xml:33:13-35:85
-109                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-109-->[com.google.firebase:firebase-storage:19.2.2] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408a0ccbe3d4075e7776fc1c3b036061/jetified-firebase-storage-19.2.2/AndroidManifest.xml:34:17-107
-110                android:value="com.google.firebase.components.ComponentRegistrar" />
-110-->[com.google.firebase:firebase-storage:19.2.2] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408a0ccbe3d4075e7776fc1c3b036061/jetified-firebase-storage-19.2.2/AndroidManifest.xml:35:17-82
-111            <meta-data
-111-->[com.google.android.gms:play-services-measurement-api:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2f9d8f5c7d816c3b93e80a644ac6c86/jetified-play-services-measurement-api-18.0.3/AndroidManifest.xml:30:13-32:85
-112                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-112-->[com.google.android.gms:play-services-measurement-api:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2f9d8f5c7d816c3b93e80a644ac6c86/jetified-play-services-measurement-api-18.0.3/AndroidManifest.xml:31:17-139
-113                android:value="com.google.firebase.components.ComponentRegistrar" />
-113-->[com.google.android.gms:play-services-measurement-api:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2f9d8f5c7d816c3b93e80a644ac6c86/jetified-play-services-measurement-api-18.0.3/AndroidManifest.xml:32:17-82
-114            <meta-data
-114-->[com.google.firebase:firebase-installations:16.3.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4981bbd33e8eef369863c32a2212df04/jetified-firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
-115                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-115-->[com.google.firebase:firebase-installations:16.3.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4981bbd33e8eef369863c32a2212df04/jetified-firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
-116                android:value="com.google.firebase.components.ComponentRegistrar" />
-116-->[com.google.firebase:firebase-installations:16.3.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4981bbd33e8eef369863c32a2212df04/jetified-firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
-117            <!--
-118                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
-119                clients to use it as well, by defining this registrar in their own core/common library.
-120            -->
-121            <meta-data
-121-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
-122                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
-122-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
-123                android:value="com.google.firebase.components.ComponentRegistrar" />
-123-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
-124        </service>
-125        <service android:name="io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService" >
-125-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
-125-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:8:18-101
-126            <intent-filter>
-126-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:29
-127                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-127-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-78
-127-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:25-75
-128            </intent-filter>
-129        </service>
-130
-131        <provider
-131-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-19:20
-132            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-132-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-82
-133            android:authorities="com.aay.groc.flutter.image_provider"
-133-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-74
-134            android:exported="false"
-134-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-37
-135            android:grantUriPermissions="true" >
-135-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-47
-136            <meta-data
-136-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-18:75
-137                android:name="android.support.FILE_PROVIDER_PATHS"
-137-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-67
-138                android:resource="@xml/flutter_image_picker_file_paths" />
-138-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-72
-139        </provider>
-140
-141        <receiver
-141-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:28:9-35:20
-142            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-142-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:29:13-78
-143            android:exported="true"
-143-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:30:13-36
-144            android:permission="com.google.android.c2dm.permission.SEND" >
-144-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:31:13-73
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/72bff3236ef989b32a30b5c0e1502b60/core-1.1.0/AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:11:9-43
+32        android:label="grocery_home" >
+32-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:10:9-37
+33        <activity
+33-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:12:9-43:20
+34            android:name="com.aay.groc.MainActivity"
+34-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:13:13-41
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+35-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:16:13-144
+36            android:hardwareAccelerated="true"
+36-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:17:13-47
+37            android:launchMode="singleTop"
+37-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:14:13-43
+38            android:theme="@style/NormalTheme"
+38-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:15:13-47
+39            android:windowSoftInputMode="adjustResize" >
+39-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:18:13-55
+40            <meta-data
+40-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:19:13-21:37
+41                android:name="flutterEmbedding"
+41-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:20:17-48
+42                android:value="2" />
+42-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:21:17-34
+43            <!--
+44                 This keeps the window background of the activity showing
+45                 until Flutter renders its first frame. It can be removed if
+46                 there is no splash screen (such as the default splash screen
+47                 defined in @style/LaunchTheme).
+48            -->
+49            <meta-data
+49-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:26:13-28:67
+50                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+50-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:27:18-82
+51                android:resource="@drawable/launch_background" />
+51-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:28:18-64
+52
+53            <!-- Theme to apply as soon as Flutter begins rendering frames -->
+54            <meta-data
+54-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:31:13-34:20
+55                android:name="io.flutter.embedding.android.NormalTheme"
+55-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:32:18-73
+56                android:resource="@style/NormalTheme" />
+56-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:33:18-55
+57
+58            <intent-filter>
+58-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:35:13-38:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:36:17-68
+59-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:36:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:37:17-76
+61-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:37:27-74
+62            </intent-filter>
+63            <intent-filter>
+63-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:39:13-42:29
+64                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+64-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:40:17-68
+64-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:40:25-66
+65
+66                <category android:name="android.intent.category.DEFAULT" />
+66-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:17-75
+66-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:27-73
+67            </intent-filter>
+68        </activity>
+69
+70        <service
+70-->[:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:19
+71            android:name="com.google.firebase.components.ComponentDiscoveryService"
+71-->[:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:18-89
+72            android:directBootAware="true"
+72-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+73            android:exported="false" >
+73-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:51:13-37
+74            <meta-data
+74-->[:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:85
+75                android:name="com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar"
+75-->[:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-127
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[:firebase_analytics] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-82
+77            <meta-data
+77-->[:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+78                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+78-->[:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[:firebase_auth] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+80            <meta-data
+80-->[:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+81                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+81-->[:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-126
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[:firebase_storage] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+83            <meta-data
+83-->[:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+84                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+84-->[:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-134
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[:cloud_firestore] /home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+86            <meta-data
+86-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-16:85
+87                android:name="com.google.firebase.components:io.flutter.plugins.firebasemessaging.FlutterFirebaseAppRegistrar"
+87-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-127
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-82
+89            <meta-data
+89-->[:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:85
+90                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+90-->[:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-124
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[:firebase_core] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:52:13-54:85
+93                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+93-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:53:17-119
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:54:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-datatransport:17.0.10] /home/aayesha/.gradle/caches/transforms-2/files-2.1/6e6a1300b589cbf75626b32eecc358c1/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:28:13-30:85
+96                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+96-->[com.google.firebase:firebase-datatransport:17.0.10] /home/aayesha/.gradle/caches/transforms-2/files-2.1/6e6a1300b589cbf75626b32eecc358c1/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:29:17-115
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-datatransport:17.0.10] /home/aayesha/.gradle/caches/transforms-2/files-2.1/6e6a1300b589cbf75626b32eecc358c1/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:30:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:77:13-79:85
+99                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+99-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:78:17-109
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:79:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-iid:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/7b1ab4b8c35a35c4c1cccdce5362efd8/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+102                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+102-->[com.google.firebase:firebase-iid:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/7b1ab4b8c35a35c4c1cccdce5362efd8/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-iid:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/7b1ab4b8c35a35c4c1cccdce5362efd8/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-firestore:22.1.2] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c8e07c095af4dfcbdfef1f80c5c0f5a9/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:20:13-22:85
+105                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+105-->[com.google.firebase:firebase-firestore:22.1.2] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c8e07c095af4dfcbdfef1f80c5c0f5a9/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:21:17-111
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-firestore:22.1.2] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c8e07c095af4dfcbdfef1f80c5c0f5a9/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:22:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-storage:19.2.2] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408a0ccbe3d4075e7776fc1c3b036061/jetified-firebase-storage-19.2.2/AndroidManifest.xml:33:13-35:85
+108                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+108-->[com.google.firebase:firebase-storage:19.2.2] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408a0ccbe3d4075e7776fc1c3b036061/jetified-firebase-storage-19.2.2/AndroidManifest.xml:34:17-107
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-storage:19.2.2] /home/aayesha/.gradle/caches/transforms-2/files-2.1/408a0ccbe3d4075e7776fc1c3b036061/jetified-firebase-storage-19.2.2/AndroidManifest.xml:35:17-82
+110            <meta-data
+110-->[com.google.android.gms:play-services-measurement-api:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2f9d8f5c7d816c3b93e80a644ac6c86/jetified-play-services-measurement-api-18.0.3/AndroidManifest.xml:30:13-32:85
+111                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+111-->[com.google.android.gms:play-services-measurement-api:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2f9d8f5c7d816c3b93e80a644ac6c86/jetified-play-services-measurement-api-18.0.3/AndroidManifest.xml:31:17-139
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.android.gms:play-services-measurement-api:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/a2f9d8f5c7d816c3b93e80a644ac6c86/jetified-play-services-measurement-api-18.0.3/AndroidManifest.xml:32:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-installations:16.3.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4981bbd33e8eef369863c32a2212df04/jetified-firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
+114                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+114-->[com.google.firebase:firebase-installations:16.3.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4981bbd33e8eef369863c32a2212df04/jetified-firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-installations:16.3.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/4981bbd33e8eef369863c32a2212df04/jetified-firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
+116            <!--
+117                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+118                clients to use it as well, by defining this registrar in their own core/common library.
+119            -->
+120            <meta-data
+120-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+121                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+121-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+123        </service>
+124        <service android:name="io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService" >
+124-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:19
+124-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:8:18-101
+125            <intent-filter>
+125-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:29
+126                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+126-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-78
+126-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:25-75
+127            </intent-filter>
+128        </service>
+129
+130        <provider
+130-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-19:20
+131            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+131-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-82
+132            android:authorities="com.aay.groc.flutter.image_provider"
+132-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-74
+133            android:exported="false"
+133-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-37
+134            android:grantUriPermissions="true" >
+134-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-47
+135            <meta-data
+135-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-18:75
+136                android:name="android.support.FILE_PROVIDER_PATHS"
+136-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-67
+137                android:resource="@xml/flutter_image_picker_file_paths" />
+137-->[:image_picker] /home/aayesha/codes/Flutter-Grocery-Home/build/image_picker/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-72
+138        </provider>
+139
+140        <activity
+140-->[:razorpay_flutter] /home/aayesha/codes/Flutter-Grocery-Home/build/razorpay_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-11:20
+141            android:name="com.razorpay.CheckoutActivity"
+141-->[:razorpay_flutter] /home/aayesha/codes/Flutter-Grocery-Home/build/razorpay_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-57
+142            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+142-->[com.razorpay:checkout:1.6.6] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c9cb202b0fc7f9f1599600e545fcd794/jetified-checkout-1.6.6/AndroidManifest.xml:20:13-83
+143            android:label="Razorpay Checkout"
+143-->[:razorpay_flutter] /home/aayesha/codes/Flutter-Grocery-Home/build/razorpay_flutter/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-46
+144            android:theme="@style/CheckoutTheme" >
+144-->[com.razorpay:checkout:1.6.6] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c9cb202b0fc7f9f1599600e545fcd794/jetified-checkout-1.6.6/AndroidManifest.xml:21:13-49
 145            <intent-filter>
-145-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:32:13-34:29
-146                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-146-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:33:17-81
-146-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:33:25-78
-147            </intent-filter>
-148        </receiver>
-149        <!--
-150             FirebaseMessagingService performs security checks at runtime,
-151             but set to not exported to explicitly avoid allowing another app to call it.
-152        -->
-153        <service
-153-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:41:9-48:19
-154            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-154-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:42:13-82
-155            android:directBootAware="true"
-155-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:43:13-43
-156            android:exported="false" >
-156-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:44:13-37
-157            <intent-filter android:priority="-500" >
-157-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:29
-158                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-158-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-78
-158-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:25-75
-159            </intent-filter>
-160        </service>
-161        <service
-161-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cb78c5d9c8a9ac2a8a02a3ca8b542d9f/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
-162            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-162-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cb78c5d9c8a9ac2a8a02a3ca8b542d9f/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
-163            android:exported="false" >
-163-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cb78c5d9c8a9ac2a8a02a3ca8b542d9f/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
-164            <meta-data
-164-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cb78c5d9c8a9ac2a8a02a3ca8b542d9f/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
-165                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-165-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cb78c5d9c8a9ac2a8a02a3ca8b542d9f/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
-166                android:value="cct" />
-166-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cb78c5d9c8a9ac2a8a02a3ca8b542d9f/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
-167        </service>
-168
-169        <activity
-169-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:27:9-44:20
-170            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-170-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:28:13-80
-171            android:excludeFromRecents="true"
-171-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:29:13-46
-172            android:exported="true"
-172-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:30:13-36
-173            android:launchMode="singleTask"
-173-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:31:13-44
-174            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-174-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:32:13-72
-175            <intent-filter>
-175-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:33:13-43:29
-176                <action android:name="android.intent.action.VIEW" />
-176-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:34:17-69
-176-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:34:25-66
-177
-178                <category android:name="android.intent.category.DEFAULT" />
-178-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:17-75
-178-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:27-73
-179                <category android:name="android.intent.category.BROWSABLE" />
-179-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:37:17-78
-179-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:37:27-75
-180
-181                <data
-181-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:39:17-42:51
-182                    android:host="firebase.auth"
-182-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:40:21-49
-183                    android:path="/"
-183-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:41:21-37
-184                    android:scheme="genericidp" />
-184-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:42:21-48
-185            </intent-filter>
-186        </activity>
-187        <activity
-187-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:45:9-62:20
-188            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-188-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:46:13-79
-189            android:excludeFromRecents="true"
-189-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:47:13-46
-190            android:exported="true"
-190-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:48:13-36
-191            android:launchMode="singleTask"
-191-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:49:13-44
-192            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-192-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:50:13-72
-193            <intent-filter>
-193-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:51:13-61:29
-194                <action android:name="android.intent.action.VIEW" />
-194-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:34:17-69
-194-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:34:25-66
-195
-196                <category android:name="android.intent.category.DEFAULT" />
-196-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:17-75
-196-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:27-73
-197                <category android:name="android.intent.category.BROWSABLE" />
-197-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:37:17-78
-197-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:37:27-75
-198
-199                <data
-199-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:39:17-42:51
-200                    android:host="firebase.auth"
-200-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:40:21-49
-201                    android:path="/"
-201-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:41:21-37
-202                    android:scheme="recaptcha" />
-202-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:42:21-48
-203            </intent-filter>
-204        </activity>
-205
-206        <service
-206-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:64:9-73:19
-207            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-207-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:65:13-101
-208            android:enabled="true"
-208-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:66:13-35
-209            android:exported="false" >
-209-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:67:13-37
-210            <intent-filter>
-210-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:68:13-72:29
-211                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-211-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:69:17-89
-211-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:69:25-86
-212
-213                <category android:name="android.intent.category.DEFAULT" />
-213-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:17-75
-213-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:27-73
-214            </intent-filter>
-215        </service>
-216
-217        <provider
-217-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
-218            android:name="com.google.firebase.provider.FirebaseInitProvider"
-218-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
-219            android:authorities="com.aay.groc.firebaseinitprovider"
-219-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
-220            android:directBootAware="true"
-220-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
-221            android:exported="false"
-221-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
-222            android:initOrder="100" />
-222-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
-223
-224        <receiver
-224-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:29:9-33:20
-225            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-225-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:30:13-85
-226            android:enabled="true"
-226-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:31:13-35
-227            android:exported="false" >
-227-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:32:13-37
-228        </receiver>
+145-->[com.razorpay:checkout:1.6.6] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c9cb202b0fc7f9f1599600e545fcd794/jetified-checkout-1.6.6/AndroidManifest.xml:22:13-28:29
+146                <action android:name="android.intent.action.MAIN" />
+146-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:36:17-68
+146-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:36:25-66
+147
+148                <data
+148-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:39:17-42:51
+149                    android:host="rzp.io"
+149-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:40:21-49
+150                    android:scheme="io.rzp" />
+150-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:42:21-48
+151            </intent-filter>
+152        </activity>
+153
+154        <receiver
+154-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:28:9-35:20
+155            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+155-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:29:13-78
+156            android:exported="true"
+156-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:30:13-36
+157            android:permission="com.google.android.c2dm.permission.SEND" >
+157-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:31:13-73
+158            <intent-filter>
+158-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:32:13-34:29
+159                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+159-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:33:17-81
+159-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:33:25-78
+160            </intent-filter>
+161        </receiver>
+162        <!--
+163             FirebaseMessagingService performs security checks at runtime,
+164             but set to not exported to explicitly avoid allowing another app to call it.
+165        -->
+166        <service
+166-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:41:9-48:19
+167            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+167-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:42:13-82
+168            android:directBootAware="true"
+168-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:43:13-43
+169            android:exported="false" >
+169-->[com.google.firebase:firebase-messaging:21.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/e4c821e972dab3a2351356d1aec5c332/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:44:13-37
+170            <intent-filter android:priority="-500" >
+170-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-11:29
+171                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+171-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:17-78
+171-->[:firebase_messaging] /home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:25-75
+172            </intent-filter>
+173        </service>
+174        <service
+174-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cb78c5d9c8a9ac2a8a02a3ca8b542d9f/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+175            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+175-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cb78c5d9c8a9ac2a8a02a3ca8b542d9f/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+176            android:exported="false" >
+176-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cb78c5d9c8a9ac2a8a02a3ca8b542d9f/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+177            <meta-data
+177-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cb78c5d9c8a9ac2a8a02a3ca8b542d9f/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+178                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+178-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cb78c5d9c8a9ac2a8a02a3ca8b542d9f/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+179                android:value="cct" />
+179-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cb78c5d9c8a9ac2a8a02a3ca8b542d9f/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+180        </service>
+181
+182        <activity
+182-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:27:9-44:20
+183            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+183-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:28:13-80
+184            android:excludeFromRecents="true"
+184-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:29:13-46
+185            android:exported="true"
+185-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:30:13-36
+186            android:launchMode="singleTask"
+186-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:31:13-44
+187            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+187-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:32:13-72
+188            <intent-filter>
+188-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:33:13-43:29
+189                <action android:name="android.intent.action.VIEW" />
+189-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:34:17-69
+189-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:34:25-66
+190
+191                <category android:name="android.intent.category.DEFAULT" />
+191-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:17-75
+191-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:27-73
+192                <category android:name="android.intent.category.BROWSABLE" />
+192-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:37:17-78
+192-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:37:27-75
+193
+194                <data
+194-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:39:17-42:51
+195                    android:host="firebase.auth"
+195-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:40:21-49
+196                    android:path="/"
+196-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:41:21-37
+197                    android:scheme="genericidp" />
+197-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:42:21-48
+198            </intent-filter>
+199        </activity>
+200        <activity
+200-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:45:9-62:20
+201            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+201-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:46:13-79
+202            android:excludeFromRecents="true"
+202-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:47:13-46
+203            android:exported="true"
+203-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:48:13-36
+204            android:launchMode="singleTask"
+204-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:49:13-44
+205            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+205-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:50:13-72
+206            <intent-filter>
+206-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:51:13-61:29
+207                <action android:name="android.intent.action.VIEW" />
+207-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:34:17-69
+207-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:34:25-66
+208
+209                <category android:name="android.intent.category.DEFAULT" />
+209-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:17-75
+209-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:27-73
+210                <category android:name="android.intent.category.BROWSABLE" />
+210-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:37:17-78
+210-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:37:27-75
+211
+212                <data
+212-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:39:17-42:51
+213                    android:host="firebase.auth"
+213-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:40:21-49
+214                    android:path="/"
+214-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:41:21-37
+215                    android:scheme="recaptcha" />
+215-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:42:21-48
+216            </intent-filter>
+217        </activity>
+218
+219        <service
+219-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:64:9-73:19
+220            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+220-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:65:13-101
+221            android:enabled="true"
+221-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:66:13-35
+222            android:exported="false" >
+222-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:67:13-37
+223            <intent-filter>
+223-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:68:13-72:29
+224                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+224-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:69:17-89
+224-->[com.google.firebase:firebase-auth:20.0.4] /home/aayesha/.gradle/caches/transforms-2/files-2.1/cfb90acc0e333ebdcf1b0329dc7cd550/jetified-firebase-auth-20.0.4/AndroidManifest.xml:69:25-86
+225
+226                <category android:name="android.intent.category.DEFAULT" />
+226-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:17-75
+226-->/home/aayesha/codes/Flutter-Grocery-Home/android/app/src/main/AndroidManifest.xml:41:27-73
+227            </intent-filter>
+228        </service>
 229
-230        <service
-230-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:35:9-38:40
-231            android:name="com.google.android.gms.measurement.AppMeasurementService"
-231-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:36:13-84
-232            android:enabled="true"
-232-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:37:13-35
-233            android:exported="false" />
-233-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:38:13-37
-234        <service
-234-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:39:9-43:72
-235            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-235-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:40:13-87
-236            android:enabled="true"
-236-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:41:13-35
-237            android:exported="false"
-237-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:42:13-37
-238            android:permission="android.permission.BIND_JOB_SERVICE" />
-238-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:43:13-69
-239
-240        <activity
-240-->[com.google.android.gms:play-services-base:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/538218237693c51a7f3aab01e8fb86e8/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-241            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-241-->[com.google.android.gms:play-services-base:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/538218237693c51a7f3aab01e8fb86e8/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-242            android:exported="false"
-242-->[com.google.android.gms:play-services-base:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/538218237693c51a7f3aab01e8fb86e8/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-243            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-243-->[com.google.android.gms:play-services-base:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/538218237693c51a7f3aab01e8fb86e8/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-244
-245        <meta-data
-245-->[com.google.android.gms:play-services-basement:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/76084eab76eccf356e7e6b42b30265c3/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
-246            android:name="com.google.android.gms.version"
-246-->[com.google.android.gms:play-services-basement:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/76084eab76eccf356e7e6b42b30265c3/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
-247            android:value="@integer/google_play_services_version" />
-247-->[com.google.android.gms:play-services-basement:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/76084eab76eccf356e7e6b42b30265c3/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
-248
-249        <service
-249-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:26:9-30:19
-250            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-250-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:27:13-117
-251            android:exported="false"
-251-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:28:13-37
-252            android:permission="android.permission.BIND_JOB_SERVICE" >
-252-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:29:13-69
-253        </service>
-254
-255        <receiver
-255-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:32:9-34:40
-256            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-256-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:33:13-132
-257            android:exported="false" />
-257-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:34:13-37
-258    </application>
-259
-260</manifest>
+230        <provider
+230-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+231            android:name="com.google.firebase.provider.FirebaseInitProvider"
+231-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+232            android:authorities="com.aay.groc.firebaseinitprovider"
+232-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+233            android:directBootAware="true"
+233-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+234            android:exported="false"
+234-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+235            android:initOrder="100" />
+235-->[com.google.firebase:firebase-common:19.5.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/f69ec61cb032cc6e0d20f6fd31abd13e/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+236
+237        <receiver
+237-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:29:9-33:20
+238            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+238-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:30:13-85
+239            android:enabled="true"
+239-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:31:13-35
+240            android:exported="false" >
+240-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:32:13-37
+241        </receiver>
+242
+243        <service
+243-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:35:9-38:40
+244            android:name="com.google.android.gms.measurement.AppMeasurementService"
+244-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:36:13-84
+245            android:enabled="true"
+245-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:37:13-35
+246            android:exported="false" />
+246-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:38:13-37
+247        <service
+247-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:39:9-43:72
+248            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+248-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:40:13-87
+249            android:enabled="true"
+249-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:41:13-35
+250            android:exported="false"
+250-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:42:13-37
+251            android:permission="android.permission.BIND_JOB_SERVICE" />
+251-->[com.google.android.gms:play-services-measurement:18.0.3] /home/aayesha/.gradle/caches/transforms-2/files-2.1/36824c0a9027e1f8defa6629e4a7fa06/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:43:13-69
+252
+253        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+253-->[com.razorpay:checkout:1.6.6] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c9cb202b0fc7f9f1599600e545fcd794/jetified-checkout-1.6.6/AndroidManifest.xml:12:9-16:20
+253-->[com.razorpay:checkout:1.6.6] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c9cb202b0fc7f9f1599600e545fcd794/jetified-checkout-1.6.6/AndroidManifest.xml:12:19-63
+254            <intent-filter>
+254-->[com.razorpay:checkout:1.6.6] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c9cb202b0fc7f9f1599600e545fcd794/jetified-checkout-1.6.6/AndroidManifest.xml:13:13-15:29
+255                <action android:name="rzp.device_token.share" />
+255-->[com.razorpay:checkout:1.6.6] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c9cb202b0fc7f9f1599600e545fcd794/jetified-checkout-1.6.6/AndroidManifest.xml:14:17-65
+255-->[com.razorpay:checkout:1.6.6] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c9cb202b0fc7f9f1599600e545fcd794/jetified-checkout-1.6.6/AndroidManifest.xml:14:25-62
+256            </intent-filter>
+257        </receiver>
+258
+259        <activity
+259-->[com.google.android.gms:play-services-auth:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9134e6ba79cc5fa81ac4db9eb9a9fde4/jetified-play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
+260            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+260-->[com.google.android.gms:play-services-auth:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9134e6ba79cc5fa81ac4db9eb9a9fde4/jetified-play-services-auth-17.0.0/AndroidManifest.xml:24:13-93
+261            android:excludeFromRecents="true"
+261-->[com.google.android.gms:play-services-auth:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9134e6ba79cc5fa81ac4db9eb9a9fde4/jetified-play-services-auth-17.0.0/AndroidManifest.xml:25:13-46
+262            android:exported="false"
+262-->[com.google.android.gms:play-services-auth:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9134e6ba79cc5fa81ac4db9eb9a9fde4/jetified-play-services-auth-17.0.0/AndroidManifest.xml:26:13-37
+263            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+263-->[com.google.android.gms:play-services-auth:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9134e6ba79cc5fa81ac4db9eb9a9fde4/jetified-play-services-auth-17.0.0/AndroidManifest.xml:27:13-72
+264        <!--
+265            Service handling Google Sign-In user revocation. For apps that do not integrate with
+266            Google Sign-In, this service will never be started.
+267        -->
+268        <service
+268-->[com.google.android.gms:play-services-auth:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9134e6ba79cc5fa81ac4db9eb9a9fde4/jetified-play-services-auth-17.0.0/AndroidManifest.xml:33:9-36:110
+269            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+269-->[com.google.android.gms:play-services-auth:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9134e6ba79cc5fa81ac4db9eb9a9fde4/jetified-play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
+270            android:exported="true"
+270-->[com.google.android.gms:play-services-auth:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9134e6ba79cc5fa81ac4db9eb9a9fde4/jetified-play-services-auth-17.0.0/AndroidManifest.xml:35:13-36
+271            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+271-->[com.google.android.gms:play-services-auth:17.0.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/9134e6ba79cc5fa81ac4db9eb9a9fde4/jetified-play-services-auth-17.0.0/AndroidManifest.xml:36:13-107
+272
+273        <activity
+273-->[com.google.android.gms:play-services-base:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/538218237693c51a7f3aab01e8fb86e8/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+274            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+274-->[com.google.android.gms:play-services-base:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/538218237693c51a7f3aab01e8fb86e8/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+275            android:exported="false"
+275-->[com.google.android.gms:play-services-base:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/538218237693c51a7f3aab01e8fb86e8/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+276            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+276-->[com.google.android.gms:play-services-base:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/538218237693c51a7f3aab01e8fb86e8/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+277
+278        <meta-data
+278-->[com.google.android.gms:play-services-basement:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/76084eab76eccf356e7e6b42b30265c3/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
+279            android:name="com.google.android.gms.version"
+279-->[com.google.android.gms:play-services-basement:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/76084eab76eccf356e7e6b42b30265c3/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
+280            android:value="@integer/google_play_services_version" />
+280-->[com.google.android.gms:play-services-basement:17.1.0] /home/aayesha/.gradle/caches/transforms-2/files-2.1/76084eab76eccf356e7e6b42b30265c3/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
+281
+282        <service
+282-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:26:9-30:19
+283            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+283-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:27:13-117
+284            android:exported="false"
+284-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:28:13-37
+285            android:permission="android.permission.BIND_JOB_SERVICE" >
+285-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:29:13-69
+286        </service>
+287
+288        <receiver
+288-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:32:9-34:40
+289            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+289-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:33:13-132
+290            android:exported="false" />
+290-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/aayesha/.gradle/caches/transforms-2/files-2.1/c562c9f2cdcfd4538ad666fc990fc856/jetified-transport-runtime-2.2.5/AndroidManifest.xml:34:13-37
+291    </application>
+292
+293</manifest>

@@ -13,7 +13,7 @@ class Cart extends StatefulWidget {
   _CartState createState() => _CartState();
 }
 
-var amount;
+double amount;
 
 class _CartState extends State<Cart> {
   @override
@@ -303,7 +303,7 @@ class _CartState extends State<Cart> {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => AddressPage()));
+                                          builder: (context) => AddressPage(amount: amount,)));
                                 },
                                 child: Text("Confirm Order"),
                               ),
