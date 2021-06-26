@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/res/merged/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/fb41218eb17d9f87bd2561850271f62e/jetified-play-services-base-17.0.0/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/res/merged/release/color/common_google_signin_btn_tint.xml",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/fb41218eb17d9f87bd2561850271f62e/jetified-play-services-base-17.0.0/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/cloud_firestore/intermediates/res/merged/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/fb41218eb17d9f87bd2561850271f62e/jetified-play-services-base-17.0.0/res/color/common_google_signin_btn_text_dark.xml"
+    }
+]

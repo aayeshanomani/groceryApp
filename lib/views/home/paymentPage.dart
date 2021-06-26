@@ -144,45 +144,130 @@ class _PaymentPageState extends State<PaymentPage> {
                         child: StreamBuilder(
                             stream: Database().getUser(username),
                             builder: (context, snapshot2) {
-                              return ElevatedButton(
-                                onPressed: () {
-                                  checkOut(
-                                      snapshot2.data.documents[0]["email"],
-                                      snapshot2.data.documents[0]
-                                          ["phoneNumber"]);
-                                  var i;
-                                  for (i = 0;
-                                      i < snapshot.data.documents.length;
-                                      i++) {
-                                    data = {
-                                      "name": snapshot.data.documents[i]
-                                          ["name"],
-                                      "price": snapshot.data.documents[i]
-                                          ["price"],
-                                      "quan": snapshot.data.documents[i]
-                                          ["quan"],
-                                      "username": username,
-                                      "date": DateTime.now().year.toString() +
-                                          "-" +
-                                          DateTime.now().month.toString() +
-                                          "-" +
-                                          DateTime.now().day.toString(),
-                                      "time": DateTime.now().hour.toString() +
-                                          ":" +
-                                          DateTime.now().minute.toString() +
-                                          " hours",
-                                      "amountPaid": int.parse(snapshot
-                                              .data.documents[i]["price"]) *
-                                          snapshot.data.documents[i]["quan"],
-                                      "address": widget.address,
-                                      "urgent": "no",
-                                      "status": "confirmed"
-                                    };
+                              return Column(
+                                children: [
+                                  ElevatedButton(
+                                    onPressed: () {
+                                      checkOut(
+                                          snapshot2.data.documents[0]["email"],
+                                          snapshot2.data.documents[0]
+                                              ["phoneNumber"]);
+                                      var i;
+                                      for (i = 0;
+                                          i < snapshot.data.documents.length;
+                                          i++) {
+                                        data = {
+                                          "name": snapshot.data.documents[i]
+                                              ["name"],
+                                          "price": snapshot.data.documents[i]
+                                              ["price"],
+                                          "quan": snapshot.data.documents[i]
+                                              ["quan"],
+                                          "username": username,
+                                          "date": DateTime.now()
+                                                  .year
+                                                  .toString() +
+                                              "-" +
+                                              DateTime.now().month.toString() +
+                                              "-" +
+                                              DateTime.now().day.toString(),
+                                          "time": DateTime.now()
+                                                  .hour
+                                                  .toString() +
+                                              ":" +
+                                              DateTime.now().minute.toString() +
+                                              " hours",
+                                          "totalAmount": int.parse(snapshot
+                                                  .data.documents[i]["price"]) *
+                                              snapshot.data.documents[i]
+                                                  ["quan"],
+                                          "payMethod": "Paid",
+                                          "address": widget.address,
+                                          "urgent": "no",
+                                          "status": "confirmed"
+                                        };
 
-                                    print(data.toString());
-                                  }
-                                },
-                                child: Text("Pay and place order"),
+                                        print(data.toString());
+                                      }
+                                    },
+                                    child: Text("Pay and place order"),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: ElevatedButton(
+                                      onPressed: () async {
+                                        bool codValid =
+                                            await Database().getTotCashOnDel();
+                                        if (codValid) {
+                                          var i;
+                                          for (i = 0;
+                                              i <
+                                                  snapshot
+                                                      .data.documents.length;
+                                              i++) {
+                                            data = {
+                                              "name": snapshot.data.documents[i]
+                                                  ["name"],
+                                              "price": snapshot
+                                                  .data.documents[i]["price"],
+                                              "quan": snapshot.data.documents[i]
+                                                  ["quan"],
+                                              "username": username,
+                                              "date": DateTime.now()
+                                                      .year
+                                                      .toString() +
+                                                  "-" +
+                                                  DateTime.now()
+                                                      .month
+                                                      .toString() +
+                                                  "-" +
+                                                  DateTime.now().day.toString(),
+                                              "time": DateTime.now()
+                                                      .hour
+                                                      .toString() +
+                                                  ":" +
+                                                  DateTime.now()
+                                                      .minute
+                                                      .toString() +
+                                                  " hours",
+                                              "totalAmount": int.parse(snapshot
+                                                      .data
+                                                      .documents[i]["price"]) *
+                                                  snapshot.data.documents[i]
+                                                      ["quan"],
+                                              "payMethod": "CASH ON DELIVERY",
+                                              "address": widget.address,
+                                              "urgent": "no",
+                                              "status": "confirmed"
+                                            };
+
+                                            print(data.toString());
+
+                                            await Database().increaseCodCount();
+
+                                            Database().placeOrder(data);
+                                            Database()
+                                                .delItemFromCart(data["name"]);
+                                            showMyDialog(context, "Success",
+                                                    "Order placed successfully")
+                                                .then((value) {
+                                              Navigator.pop(context);
+                                            });
+                                          }
+                                        } else {
+                                          showMyDialog(context, "Error",
+                                              "Cannot place COD orders right now.");
+                                        }
+                                      },
+                                      child: Text(
+                                        "Choose cash on delivery",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                      style: ElevatedButton.styleFrom(
+                                          primary: Color(0xff26532B)),
+                                    ),
+                                  )
+                                ],
                               );
                             }),
                       ),

@@ -11,15 +11,15 @@ Customer care number                                          |	done		|
 --------------------------------------------------------------------------------------
 Emai I'd                                                      |	done		|
 --------------------------------------------------------------------------------------
-Online payment all the mods                                   |			|
+Online payment all the mods                                   |	done		|
 --------------------------------------------------------------------------------------
-Total three clicks should complete the transaction            |			|
+Total three clicks should complete the transaction            |	done		|
 --------------------------------------------------------------------------------------
 1.Adding item,                                                |	done		|
 --------------------------------------------------------------------------------------
 2. In Cart re checking item and total bill                    |	done		|
 --------------------------------------------------------------------------------------
-3. Online payment/ cash on delivery                           |			|
+3. Online payment/ cash on delivery                           |	done		|
 --------------------------------------------------------------------------------------
 Customer should get bill in pdf format what's up message      |	not possible	|
 --------------------------------------------------------------------------------------

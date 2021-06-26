@@ -189,6 +189,28 @@ class Database {
         .snapshots();
   }
 
+  Future<bool> getTotCashOnDel() async {
+    final result = await FirebaseFirestore.instance
+        .collection("ordersPlaced")
+        .where("CODCount", isEqualTo: 2)
+        .get();
+
+    
+    
+    return result.docs.isEmpty;
+  }
+
+  increaseCodCount() async {
+    final result = await FirebaseFirestore.instance
+        .collection("ordersPlaced")
+        .where("CODCount", isLessThan: 2)
+        .get();
+    FirebaseFirestore.instance
+        .collection("ordersPlaced")
+        .doc("codCount")
+        .set({"CODCount": result.docs[0]["CODCount"]+1}, SetOptions(merge: true));
+  }
+
   saveAddress(Map data) {
     FirebaseFirestore.instance
         .collection("users")
@@ -206,6 +228,4 @@ class Database {
         .doc(docId)
         .delete();
   }
-
-  
 }

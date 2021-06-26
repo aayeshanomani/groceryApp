@@ -117,6 +117,7 @@ class _SignUpState extends State<SignUp> {
                       padding: const EdgeInsets.all(8.0),
                       child: TextField(
                         obscureText: true,
+                        keyboardType: TextInputType.number,
                         decoration: InputDecoration(
                           hintText: "Password",
                         ),
@@ -131,6 +132,7 @@ class _SignUpState extends State<SignUp> {
                       padding: const EdgeInsets.all(8.0),
                       child: TextField(
                         obscureText: true,
+                        keyboardType: TextInputType.number,
                         decoration: InputDecoration(
                           hintText: "Confirm Password",
                         ),
@@ -154,6 +156,9 @@ class _SignUpState extends State<SignUp> {
                                   .checkUsername(_username)) {
                                 _showMyDialog(
                                     "Error", "The Username already exists");
+                              } else if (_password.length!=4) {
+                                _showMyDialog(
+                                    "Error", "The Password should be of 4 digits.");
                               } else if (_password != _confirmPassword) {
                                 _showMyDialog(
                                     "Error", "Passwords should match");

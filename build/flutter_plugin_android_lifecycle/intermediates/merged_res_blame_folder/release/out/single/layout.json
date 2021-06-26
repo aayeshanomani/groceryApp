@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/flutter_plugin_android_lifecycle/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/72bff3236ef989b32a30b5c0e1502b60/core-1.1.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/flutter_plugin_android_lifecycle/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/72bff3236ef989b32a30b5c0e1502b60/core-1.1.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/flutter_plugin_android_lifecycle/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/72bff3236ef989b32a30b5c0e1502b60/core-1.1.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/flutter_plugin_android_lifecycle/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/72bff3236ef989b32a30b5c0e1502b60/core-1.1.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/flutter_plugin_android_lifecycle/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/72bff3236ef989b32a30b5c0e1502b60/core-1.1.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/flutter_plugin_android_lifecycle/intermediates/res/merged/release/layout/custom_dialog.xml",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/72bff3236ef989b32a30b5c0e1502b60/core-1.1.0/res/layout/custom_dialog.xml"
+    }
+]

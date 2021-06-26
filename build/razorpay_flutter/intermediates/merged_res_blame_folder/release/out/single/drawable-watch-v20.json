@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/razorpay_flutter/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/9134e6ba79cc5fa81ac4db9eb9a9fde4/jetified-play-services-auth-17.0.0/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/razorpay_flutter/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/9134e6ba79cc5fa81ac4db9eb9a9fde4/jetified-play-services-auth-17.0.0/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/razorpay_flutter/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/9134e6ba79cc5fa81ac4db9eb9a9fde4/jetified-play-services-auth-17.0.0/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    }
+]

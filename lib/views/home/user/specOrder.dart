@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_home/views/home/cart.dart';
+import 'package:grocery_home/views/home/common/widget.dart';
 import 'package:grocery_home/views/home/services/database.dart';
 
 class SpecOrder extends StatefulWidget {
@@ -9,6 +11,8 @@ class SpecOrder extends StatefulWidget {
   @override
   _SpecOrderState createState() => _SpecOrderState();
 }
+
+String minQ;
 
 class _SpecOrderState extends State<SpecOrder> {
   @override
@@ -76,17 +80,28 @@ class _SpecOrderState extends State<SpecOrder> {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
-                              margin: const EdgeInsets.all(8.0),
-                                      padding: const EdgeInsets.all(8.0),
-                              width: MediaQuery.of(context).size.width/1.1,
                               decoration: BoxDecoration(
                                   color: Color(0xffCCF5AC),
                                   borderRadius: BorderRadius.circular(4)),
-                              child: Center(
-                                child: Text("Total Amount Paid: Rs. " +
-                                    snapshot.data.documents[0]['amountPaid']
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text("Total Amount : Rs. " +
+                                    snapshot.data.documents[0]['totalAmount']
                                         .toString()),
                               ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Color(0xff399E5A),
+                                  borderRadius: BorderRadius.circular(4)),
+                              child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text("Payment Method: " +
+                                snapshot.data.documents[0]['payMethod'], style: TextStyle(color: Colors.white),),
+                          ),
                             ),
                           ),
                           Padding(
@@ -104,17 +119,20 @@ class _SpecOrderState extends State<SpecOrder> {
                             child: Column(
                               children: [
                                 Text("Delivery address: "),
-                                    Container(
-                                      width: MediaQuery.of(context).size.width/1.1,
-                                      decoration: BoxDecoration
-                                      (
-                                        color: Color(0xff49111C),
-                                        borderRadius: BorderRadius.circular(6)
-                                      ),
-                                      margin: const EdgeInsets.all(8.0),
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Center(child: Text(snapshot.data.documents[0]['address'], style: TextStyle(color: Colors.white),)),
-                                    ),
+                                Container(
+                                  width:
+                                      MediaQuery.of(context).size.width / 1.1,
+                                  decoration: BoxDecoration(
+                                      color: Color(0xff49111C),
+                                      borderRadius: BorderRadius.circular(6)),
+                                  margin: const EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Center(
+                                      child: Text(
+                                    snapshot.data.documents[0]['address'],
+                                    style: TextStyle(color: Colors.white),
+                                  )),
+                                ),
                               ],
                             ),
                           ),
@@ -123,6 +141,26 @@ class _SpecOrderState extends State<SpecOrder> {
                             child: Text("Status: " +
                                 snapshot.data.documents[0]['status']),
                           ),
+                          ElevatedButton(
+                              onPressed: () {
+                                Map<String, dynamic> sata = {
+                                  "name": snapshot.data.documents[0]["name"],
+                                  "quan": snapshot.data.documents[0]['quan'],
+                                  "price": snapshot.data.documents[0]["price"]
+                                };
+                                Database().addToCart(
+                                    snapshot.data.documents[0]["name"],
+                                    sata);
+                                showMyDialog(context, "Added",
+                                        "Same order placed again.")
+                                    .then((value) {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => Cart()));
+                                });
+                              },
+                              child: Text("Add to Cart"))
                         ],
                       ),
                     ),

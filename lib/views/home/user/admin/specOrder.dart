@@ -91,12 +91,26 @@ class _SpecOrderState extends State<SpecOrder> {
                                   borderRadius: BorderRadius.circular(4)),
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
-                                child: Text("Total Amount Paid: Rs. " +
-                                    snapshot.data.documents[0]['amountPaid']
+                                child: Text("Total Amount : Rs. " +
+                                    snapshot.data.documents[0]['totalAmount']
                                         .toString()),
                               ),
                             ),
                           ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  color: Color(0xff399E5A),
+                                  borderRadius: BorderRadius.circular(4)),
+                              child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text("Payment Method: " +
+                                snapshot.data.documents[0]['payMethod'], style: TextStyle(color: Colors.white),),
+                          ),
+                            ),
+                          ),
+                          
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Text("Date of Order: " +

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/res/merged/release/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/fb41218eb17d9f87bd2561850271f62e/jetified-play-services-base-17.0.0/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/res/merged/release/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/fb41218eb17d9f87bd2561850271f62e/jetified-play-services-base-17.0.0/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/res/merged/release/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/fb41218eb17d9f87bd2561850271f62e/jetified-play-services-base-17.0.0/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/res/merged/release/drawable-xxhdpi-v4/googleg_disabled_color_18.png",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/fb41218eb17d9f87bd2561850271f62e/jetified-play-services-base-17.0.0/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/res/merged/release/drawable-xxhdpi-v4/googleg_standard_color_18.png",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/fb41218eb17d9f87bd2561850271f62e/jetified-play-services-base-17.0.0/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "/home/aayesha/codes/Flutter-Grocery-Home/build/firebase_messaging/intermediates/res/merged/release/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "/home/aayesha/.gradle/caches/transforms-2/files-2.1/fb41218eb17d9f87bd2561850271f62e/jetified-play-services-base-17.0.0/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    }
+]
